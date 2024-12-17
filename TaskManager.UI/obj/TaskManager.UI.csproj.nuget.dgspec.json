@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.UI\\TaskManager.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
+        "projectName": "TaskManager.Aplicacion",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gesel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
+        "projectName": "TaskManager.Dominio",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
+        "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gesel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
+        "projectName": "TaskManager.Infraestructura",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gesel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
+              },
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.UI\\TaskManager.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.UI\\TaskManager.UI.csproj",
+        "projectName": "TaskManager.UI",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.UI\\TaskManager.UI.csproj",
+        "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gesel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
+              },
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              },
+              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
