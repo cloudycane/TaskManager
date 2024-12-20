@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r76fKKVDzMk=",
+  "dgSpecHash": "yXdeuamgaQo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

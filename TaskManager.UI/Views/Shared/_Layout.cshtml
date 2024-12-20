@@ -4,9 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TaskManager.UI</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/TaskManager.UI.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
@@ -17,58 +15,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Sidebar Holder -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Task Manager</h3>
-
-            </div>
-
-            <ul class="list-unstyled components">
-                
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Overview</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 2</a></li>
-                        <li><a href="#">Home 3</a></li>
+    <div id="wrapper">
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <nav class="sidebar">
+                    <ul class="sidebar__toggled">
+                        <li><a href="javascript:void(0)" id="main-toggle" class="sidebar-toggle">Menu</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                </nav>
+                <nav class="sidebar">
+                    <ul>
+                        <li class="title">Item Group</li>
+                        <li><a><span class="icon glyphicon glyphicon-link"></span>Link1</a></li>
+                        <li><a><span class="icon glyphicon glyphicon-link"></span>link2</a></li>
+                        <li>
+                            <a class="dropdown-toggle" href="#"><span class="icon glyphicon glyphicon-link"></span>Sub menu</a>
+                            <ul class="dropdown-menu" data-role="dropdown">
+                                <li><a href="#">Subitem 1</a></li>
+                                <li><a href="#">Subitem 2</a></li>
+                                <li><a href="#">Subitem 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Subitem 4</a></li>
+                                <li class="disabled"><a href="#">Subitem 4</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!-- Page Content Holder -->
-        <div id="content">
-            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                <i class="glyphicon glyphicon-align-left"></i>
-                <span>Toggle Sidebar</span>
-            </button>
-            <div class="container-fluid">
-                <h2>@RenderBody()</h2>
+                </nav>
             </div>
+            
         </div>
+        <div id="page-content-wrapper">@RenderBody()</div>
     </div>
-    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

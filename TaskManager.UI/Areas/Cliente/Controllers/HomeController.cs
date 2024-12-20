@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using TaskManager.UI.Models;
 
-namespace TaskManager.UI.Controllers
+namespace TaskManager.UI.Areas.Cliente.Controllers
 {
+    [Area("Cliente")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

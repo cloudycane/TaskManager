@@ -1,4 +1,5 @@
-wwwroot\css\site.css
+wwwroot\css\crearView.css
+wwwroot\css\dashboard.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

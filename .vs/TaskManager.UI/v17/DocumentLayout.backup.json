@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\areas\\cliente\\views\\reservacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\views\\reservacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\wwwroot\\css\\crearview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\wwwroot\\css\\crearview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\areas\\cliente\\views\\reservacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\views\\reservacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "crearView.css",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\crearView.css",
+              "RelativeDocumentMoniker": "TaskManager.UI\\wwwroot\\css\\crearView.css",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\crearView.css",
+              "RelativeToolTip": "TaskManager.UI\\wwwroot\\css\\crearView.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-20T23:11:32.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "TaskManager.UI\\wwwroot\\css\\dashboard.css",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "TaskManager.UI\\wwwroot\\css\\dashboard.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-20T23:10:56.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAUwDEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T23:07:33.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T23:07:31.981Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -620,6 +620,8 @@
       "TaskManager.Infraestructura/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.36",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
           "TaskManager.Aplicacion": "1.0.0",
           "TaskManager.Dominio": "1.0.0"
         },
