@@ -1,1 +1,81 @@
-﻿<h1>Creado!</h1>
+﻿
+@model ListadoReservacionesViewModel
+
+<h1 class="text-center">Listado de Reservaciones</h1>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Estado</th>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Correo Electrónico</th>
+			<th>Télefono</th>
+			<th>Fecha de Reservación</th>
+			<th>Hora</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+
+	<tbody>
+			
+			@foreach (var reservas in Model.ListadoReservaciones.OrderByDescending(fecha => fecha.FechadeReservacion))
+			{
+				<tr>
+					<td>
+						@if (reservas.EstadoReservacionEnum == EstadoReservacionEnum.Reservado){
+							<span class="label label-success">Reservado</span>
+						} else if (reservas.EstadoReservacionEnum == EstadoReservacionEnum.EnSesion)
+						{
+							<span class="label label-warning">En Sesión</span>
+						} else if (reservas.EstadoReservacionEnum == EstadoReservacionEnum.Terminado)
+						{
+							<span class="label label-danger">Terminado</span>
+						} else if (reservas.EstadoReservacionEnum == EstadoReservacionEnum.Desconocido)
+						{
+							<span class="label label-info">Desconocido</span>
+						}
+					</td>
+					<td>@reservas.Nombre</td>
+					<td>@reservas.Apellidos</td>
+					<td>@reservas.CorreoElectronico</td>
+					<td>@reservas.Telefono</td>
+					<td class="text-center"><span class="label label-success">@reservas.FechadeReservacion.ToString("d")</span></td>
+					<td><span class="label label-success">@reservas.HoradeReservacion.ToString("hh") : @reservas.HoradeReservacion.ToString("mm")</span></td>
+					<td>
+						<a class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span></a>
+						<a class="btn btn-warning" asp-action="Editar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span class="glyphicon glyphicon-pencil"></span></a>
+						<a class="btn btn-danger" asp-action="Eliminar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span class="glyphicon glyphicon-trash"></span></a>
+					</td>
+				</tr>
+			}
+		
+	
+	</tbody>
+</table>
+
+<hr />
+<h3 class="text-center">Reservaciones Hoy - @DateTime.Now.Date.ToString("d")</h3>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Estado</th>
+				<th>Nombre y Apellidos</th>
+				<th>Hora</th>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach (var reservacionHoy in Model.ListadoReservaciones
+				.OrderBy(hora => hora.HoradeReservacion)
+				.Where(reservacion => reservacion.FechadeReservacion.Date == DateTime.Now.Date))
+		{
+			<tr>
+				<td>@reservacionHoy.EstadoReservacionEnum</td>
+				<td>@reservacionHoy.Nombre @reservacionHoy.Apellidos</td>
+				<td>@reservacionHoy.HoradeReservacion.ToString("hh") : @reservacionHoy.HoradeReservacion.ToString("mm")</td>
+			</tr>
+		}
+
+		</tbody>
+	</table>
+	

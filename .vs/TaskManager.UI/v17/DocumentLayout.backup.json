@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\areas\\cliente\\views\\reservacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\views\\reservacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.dominio\\entidades\\reservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|solutionrelative:taskmanager.dominio\\entidades\\reservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\wwwroot\\css\\crearview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\wwwroot\\css\\crearview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.dominio\\entidades\\dtos\\reservaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|solutionrelative:taskmanager.dominio\\entidades\\dtos\\reservaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\taskmanager.ui\\taskmanager\\taskmanager.ui\\areas\\cliente\\views\\reservacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "crearView.css",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\crearView.css",
-              "RelativeDocumentMoniker": "TaskManager.UI\\wwwroot\\css\\crearView.css",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\crearView.css",
-              "RelativeToolTip": "TaskManager.UI\\wwwroot\\css\\crearView.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-20T23:11:32.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dashboard.css",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\dashboard.css",
-              "RelativeDocumentMoniker": "TaskManager.UI\\wwwroot\\css\\dashboard.css",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\wwwroot\\css\\dashboard.css",
-              "RelativeToolTip": "TaskManager.UI\\wwwroot\\css\\dashboard.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-20T23:10:56.691Z",
+              "Title": "ReservacionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\Entidades\\DTOs\\ReservacionDTO.cs",
+              "RelativeDocumentMoniker": "TaskManager.Dominio\\Entidades\\DTOs\\ReservacionDTO.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\Entidades\\DTOs\\ReservacionDTO.cs",
+              "RelativeToolTip": "TaskManager.Dominio\\Entidades\\DTOs\\ReservacionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T19:08:17.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Crear.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwDEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T23:07:33.588Z",
+              "Title": "ReservacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\Entidades\\ReservacionModel.cs",
+              "RelativeDocumentMoniker": "TaskManager.Dominio\\Entidades\\ReservacionModel.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\Entidades\\ReservacionModel.cs",
+              "RelativeToolTip": "TaskManager.Dominio\\Entidades\\ReservacionModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAApwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T19:05:03.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
               "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
               "ToolTip": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
               "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T23:07:31.981Z",
+              "WhenOpened": "2024-12-22T18:35:27.161Z",
               "EditorCaption": ""
             }
           ]

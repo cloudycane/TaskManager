@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TaskManager.Aplicacion.Interfaces;
+using TaskManager.Aplicacion.Servicios;
 using TaskManager.Infraestructura.Data;
 using TaskManager.Infraestructura.Repositorios;
 
@@ -15,8 +16,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Dependency Injection 
+
+builder.Services.AddScoped<ReservacionService>();
 
 builder.Services.AddScoped<IReservacionRepositorio, ReservacionRepositorio>(); 
 

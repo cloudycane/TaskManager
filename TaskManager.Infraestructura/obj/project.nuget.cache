@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L/UXHyHamfU=",
+  "dgSpecHash": "rjRjFDZeoGg=",
   "success": true,
   "projectFilePath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gesel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\gesel\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gesel\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\gesel\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

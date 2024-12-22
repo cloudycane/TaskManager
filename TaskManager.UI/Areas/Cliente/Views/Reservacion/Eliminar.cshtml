@@ -1,0 +1,61 @@
+﻿
+@model ReservacionDTO
+
+@{
+
+    ViewBag.Title = "Eliminar Reserva";
+}
+
+<link rel="stylesheet" href="~/css/crearView.css" />
+<h1 class="text-center">Eliminar una reservación</h1>
+<h3 class="text-center">¿Estás seguro/a de eliminar esta reservación?</h3>
+
+@using (Html.BeginForm("Eliminar", "Reservacion", FormMethod.Post, new { @style = "margin-top: 2%" }))
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.Nombre)
+                @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @placeholder = "Ingrese su nombre", @disabled = true})
+                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.Apellidos)
+                @Html.TextBoxFor(model => model.Apellidos, new { @class = "form-control", @placeholder = "Ingrese sus apellidos", @disabled = true })
+                @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.Telefono)
+                @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control", @placeholder = "Ingrese su teléfono", @disabled = true })
+                @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.CorreoElectronico)
+                @Html.TextBoxFor(model => model.CorreoElectronico, new { @class = "form-control", @placeholder = "Ingrese su correo electrónico", @disabled = true })
+                @Html.ValidationMessageFor(model => model.CorreoElectronico, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.FechadeReservacion)
+                @Html.TextBoxFor(model => model.FechadeReservacion, new { @class = "form-control", @type = "date", @disabled = true })
+                @Html.ValidationMessageFor(model => model.FechadeReservacion, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-lg-4">
+                @Html.LabelFor(model => model.HoradeReservacion)
+                @Html.TextBoxFor(model => model.HoradeReservacion, new { @class = "form-control", @type = "time", @disabled = true })
+                @Html.ValidationMessageFor(model => model.HoradeReservacion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-lg-12" id="btnCrear">
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </div>
+
+    </div>
+}

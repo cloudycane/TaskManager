@@ -25,15 +25,20 @@ namespace TaskManager.Dominio.Entidades
         public string CorreoElectronico { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido.")]
+        [Display(Name = "Fecha de Reservación")]
         public DateTime FechadeReservacion {  get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido.")]
+        [Display(Name = "Hora de Reservación")]
+        [Range(typeof(TimeSpan), "08:00", "22:00", ErrorMessage = "La hora de reservación debe estar entre 08:00 y 22:00.")]
         public TimeSpan HoradeReservacion { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido.")]
+        [Display(Name = "Estado de Reservación")]
         public EstadoReservacionEnum EstadoReservacionEnum { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido.")]
         public MesasEnum MesasEnum { get; set; }
+
     }
 }
