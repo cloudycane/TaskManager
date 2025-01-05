@@ -17,9 +17,9 @@ https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 <img src="./graph1.png" />
 
 # Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
-## Módulo 1: Reservación
-## Módulo 2: Pedidos (Cliente)
-## Módulo 3: Producción 
+## Módulo 1: Reservación / Gestión de Reservas 
+## Módulo 2: Pedidos / Gestión de Pedidos de Clientes 
+## Módulo 3: Producción / Producción de los Pedidos 
 ## Módulo 4: Facturación/Pago (Cliente)
 ## Módulo 5: Inventario (Productos Terminados o Consumos)
 ## Módulo 6: Suministros
