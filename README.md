@@ -14,14 +14,20 @@ Este proyecto tiene finalidad de crear una plataforma SaaS (Software as a Servic
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 
 ## Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
-### Módulo 1: Reservación
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>ETAPAS</th>
-      <td>Crear una reservación</td>
-      <td></td>
-    </tr>
-  </thead>
-</table>
 <img src="./graph1.png" />
+### Módulo 1: Reservación
+### Módulo 2: Pedidos (Cliente)
+### Módulo 3: Producción 
+### Módulo 4: Facturación/Pago (Cliente)
+### Módulo 5: Inventario (Productos Terminados o Consumos)
+### Módulo 6: Suministros
+### Módulo 7: Inventario (Materias Primas o Insumos) 
+### Módulo 8: Pedidos
+### Módulo 9: Adquisición
+### Módulo 10: Facturación/Pago (Empresa) 
+### Módulo 11: Ventas 
+### Módulo 12: Contabilidad y Finanzas
+### Módulo 13: Marketing 
+### Módulo 14: Recursos Humanos
+### Módulo 15: Distribución
+
