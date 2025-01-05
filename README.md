@@ -11,8 +11,7 @@ Este proyecto tiene finalidad de crear una plataforma SaaS (Software as a Servic
   <li>Fidelización</li>
 </ul>
 
-
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 
-
+## Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
 <img src="./graph1.png" />
