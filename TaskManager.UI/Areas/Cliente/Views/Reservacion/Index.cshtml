@@ -1,7 +1,25 @@
 ﻿
 @model ListadoReservacionesViewModel
 
+@if (TempData["SuccessMessage"] != null)
+{
+	<script>
+		Swal.fire({
+			title: '¡Éxito!',
+			text: '@TempData["SuccessMessage"]',
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	</script>
+}
+
 <h1 class="text-center">Listado de Reservaciones</h1>
+
+<div class="col-lg-12" style="margin-bottom: 2%">
+	<a class="btn btn-primary" asp-action="Crear" asp-controller="Reservacion" asp-area="Cliente">Crear Reservación</a>
+	<a class="btn btn-info" asp-action="ObtenerReservacionesCSV" asp-controller="Reservacion" asp-area="Cliente">Generar CSV</a>
+	<a class="btn btn-info" asp-action="ObtenerReservacionesExcel" asp-controller="Reservacion" asp-area="Cliente">Generar Excel</a> 
+</div>
 
 <table class="table table-striped">
 	<thead>
@@ -40,42 +58,20 @@
 					<td>@reservas.Apellidos</td>
 					<td>@reservas.CorreoElectronico</td>
 					<td>@reservas.Telefono</td>
-					<td class="text-center"><span class="label label-success">@reservas.FechadeReservacion.ToString("d")</span></td>
+					<td><span class="label label-success">@reservas.FechadeReservacion.ToString("d")</span></td>
 					<td><span class="label label-success">@reservas.HoradeReservacion.ToString("hh") : @reservas.HoradeReservacion.ToString("mm")</span></td>
 					<td>
-						<a class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span></a>
-						<a class="btn btn-warning" asp-action="Editar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span class="glyphicon glyphicon-pencil"></span></a>
-						<a class="btn btn-danger" asp-action="Eliminar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span class="glyphicon glyphicon-trash"></span></a>
+						<a class="btn btn-info"><span style="color: white" class="glyphicon glyphicon-info-sign"></span></a>
+						<a class="btn btn-warning" asp-action="Editar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span style="color: white" class="glyphicon glyphicon-pencil"></span></a>
+						<a class="btn btn-danger" asp-action="Eliminar" asp-controller="Reservacion" asp-area="Cliente" asp-route-id="@reservas.Id"><span style="color: white" class="glyphicon glyphicon-trash"></span></a>
+						<a asp-action="ReservacionPDF" asp-area="Cliente" asp-controller="Reservacion" asp-route-id="@reservas.Id" class="btn btn-secondary"><span style="color: white" class="glyphicon glyphicon-print"></span></a>
+
 					</td>
 				</tr>
 			}
-		
-	
 	</tbody>
 </table>
 
 <hr />
-<h3 class="text-center">Reservaciones Hoy - @DateTime.Now.Date.ToString("d")</h3>
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th>Estado</th>
-				<th>Nombre y Apellidos</th>
-				<th>Hora</th>
-			</tr>
-		</thead>
-		<tbody>
-		@foreach (var reservacionHoy in Model.ListadoReservaciones
-				.OrderBy(hora => hora.HoradeReservacion)
-				.Where(reservacion => reservacion.FechadeReservacion.Date == DateTime.Now.Date))
-		{
-			<tr>
-				<td>@reservacionHoy.EstadoReservacionEnum</td>
-				<td>@reservacionHoy.Nombre @reservacionHoy.Apellidos</td>
-				<td>@reservacionHoy.HoradeReservacion.ToString("hh") : @reservacionHoy.HoradeReservacion.ToString("mm")</td>
-			</tr>
-		}
 
-		</tbody>
-	</table>
-	
+@await Component.InvokeAsync("Sample")

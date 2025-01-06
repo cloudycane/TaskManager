@@ -19,7 +19,7 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sample()
         {
             return View();
         }

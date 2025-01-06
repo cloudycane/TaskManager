@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Dominio.Entidades.DTOs;
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Rotativa.AspNetCore;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Aplicacion.Servicios;
 using TaskManager.Dominio.Entidades;
@@ -29,8 +30,20 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
 
             return View(viewModel);
         }
-
         [HttpGet]
+		public async Task<IActionResult> DetalleReservacionCliente(int id)
+		{
+			var reservacion = await _reservacionRepositorio.ObtenerReservacionPorId(id);
+			if (reservacion == null)
+			{
+				return NotFound();
+			}
+
+			return View(reservacion);
+		}
+
+
+		[HttpGet]
         public IActionResult Crear()
         {
             return View();
@@ -44,9 +57,9 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             {
                 return View(reservacion);
             }
-
-            await _reservacionRepositorio.CrearReservacionAsync(reservacion);
-            return RedirectToAction("Index");
+            var reservacionId = await _reservacionRepositorio.CrearReservacionAsync(reservacion);
+            TempData["SuccessMessage"] = "Enhorabuena, ha sido creada exitosamente";
+			return RedirectToAction("DetalleReservacionCliente", new { id = reservacionId });
         }
 
         [HttpGet]
@@ -76,7 +89,8 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
                 return NotFound();
             }
             await _reservacionRepositorio.EliminarReservacion(id);
-            return RedirectToAction("Index");
+			TempData["SuccessMessage"] = "Enhorabuena, ha sido eliminada exitosamente";
+			return RedirectToAction("Index");
 
         }
 
@@ -106,9 +120,33 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
                 var dto = _reservacionService.ConvertToDTO(model);
                 return View(dto); 
             }
-
             await _reservacionRepositorio.EditarReservacion(model);
-            return RedirectToAction("Index");
+			TempData["SuccessMessage"] = "Enhorabuena, ha sido editada exitosamente";
+			return RedirectToAction("Index");
         }
+
+        public async Task<IActionResult> ReservacionPDF(int id)
+		{
+			var reservacion = await _reservacionRepositorio.ObtenerReservacionPorId(id);
+			if (reservacion == null)
+			{
+				return NotFound();
+			}
+			var dtoReservacion = _reservacionService.ConvertToDTO(reservacion);
+			return new ViewAsPdf("ReservacionPDF", dtoReservacion);
+		}
+
+        public async Task<IActionResult> ObtenerReservacionesCSV()
+        {
+            MemoryStream memoryStream = await _reservacionRepositorio.ObtenerReservacionCSV();
+            return File(memoryStream, "application/octet-stream", "Reservaciones.csv");
+        }
+
+        public async Task<IActionResult> ObtenerReservacionesExcel()
+        {
+            MemoryStream memoryStream = await _reservacionRepositorio.ObtenerReservacionExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Reservaciones.xlsx");
+        }
+
     }
 }

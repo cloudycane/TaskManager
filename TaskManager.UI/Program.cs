@@ -20,10 +20,18 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Dependency Injection 
 
 builder.Services.AddScoped<ReservacionService>();
+builder.Services.AddScoped<SuministradorService>();
+builder.Services.AddScoped<ProductoSuministradorService>();
 
 builder.Services.AddScoped<IReservacionRepositorio, ReservacionRepositorio>(); 
+builder.Services.AddScoped<ISuministradorRepositorio, SuministradorRepositorio>();
+builder.Services.AddScoped<IProductoSuministradorRepositorio, ProductoSuministradorRepositorio>();
 
 var app = builder.Build();
+
+// Rotativa
+
+Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

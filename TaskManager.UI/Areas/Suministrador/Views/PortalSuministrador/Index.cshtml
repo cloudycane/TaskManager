@@ -1,0 +1,75 @@
+﻿@model ListadoSuministradoresViewModel
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        Swal.fire({
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    </script>
+}
+
+<h1 class="text-center">Listado de suministradores</h1>
+
+<div class="container">
+    
+    <div class="col-lg-12" id="btnCrear">
+        <a class="btn btn-primary" asp-action="Crear" asp-area="Suministrador" asp-controller="PortalSuministrador">Crear Suministrador</a>
+    </div>
+
+    <div class="col-lg-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Razon Social
+                    </th>
+                    <th>
+                        Direccion
+                    </th>
+                    <th>
+                        Localidad
+                    </th>
+                    <th>
+                        Provincia
+                    </th>
+                    <th>
+                        Pais
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var suministrador in Model.ListadoSuministradores)
+                {
+                    <tr>
+                        <td>
+                            @suministrador.RazonSocial
+                        </td>
+                        <td>
+                            @suministrador.DireccionLinea1, @suministrador.DireccionLinea2
+                        </td>
+                        <td>
+                            @suministrador.Localidad
+                        </td>
+                        <td>
+                            @suministrador.Provincia
+                        </td>
+                        <td>
+                            @suministrador.Pais
+                        </td>
+                        <td>
+                            <a class="btn btn-info" asp-action="Editar" asp-area="Suministrador" asp-controller="PortalSuministrador" asp-route-id="@suministrador.Id">Editar</a>
+                            <a class="btn btn-danger" asp-action="Eliminar" asp-area="Suministrador" asp-controller="PortalSuministrador" asp-route-id="@suministrador.Id">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

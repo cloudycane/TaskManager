@@ -22,6 +22,44 @@ namespace TaskManager.Infraestructura.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CantidadProductoEnVenta")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoriaProductoSuministradorEnum")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DescripcionProducto")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NombreProducto")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<double>("PrecioProducto")
+                        .HasColumnType("float");
+
+                    b.Property<int>("SuministradorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnidadProductoEnum")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosSuministradores");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ReservacionModel", b =>
                 {
                     b.Property<int>("Id")
@@ -63,6 +101,66 @@ namespace TaskManager.Infraestructura.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Reservaciones");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.SuministradorModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("DireccionLinea1")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("DireccionLinea2")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Localidad")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("ProductoSuministradorModelId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Provincia")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("RazonSocial")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductoSuministradorModelId");
+
+                    b.ToTable("Suministradores");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.SuministradorModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.ProductoSuministradorModel", null)
+                        .WithMany("Suministrador")
+                        .HasForeignKey("ProductoSuministradorModelId");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
+                {
+                    b.Navigation("Suministrador");
                 });
 #pragma warning restore 612, 618
         }

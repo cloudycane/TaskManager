@@ -1,11 +1,162 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<html lang="en" style="margin-bottom: 2%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @await Component.InvokeAsync("Sample")
-    
+    <title>@ViewData["Title"]</title>
 
-</div>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/carousel.css" rel="stylesheet" asp-append-version="true">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" asp-append-version="true">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" asp-append-version="true">
+</head>
+
+<body>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="https://i.pinimg.com/736x/ca/97/d9/ca97d966369903767a70c5f3af17c815.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-justify">
+                        <h1><u>Bienvenidos a Resto Fibonacci</u></h1>
+                        <p>En Resto Fibonacci, encontramos la armonía perfecta entre sabor, estilo y creatividad. Cada plato es una obra elaborada para tus sentidos y transformar cada visita en un momento inolvidable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="https://i.pinimg.com/736x/a9/8a/ef/a98aef932ff033f290bcd18027948885.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1><u>Sabor de Autenticidad</u></h1>
+                        <p>Cada plato cuenta una historia única, combinando recetas tradicionales con un toque contemporáneo. Descubre la verdadera esencia de la cocina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="third-slide" src="https://i.pinimg.com/736x/eb/3c/5b/eb3c5b0b5ee0b4871f01d8c7024d82d5.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1><u>Más que Comida, una Elegancia</u></h1>
+                        <p>Transformamos cada plato en una expresión de arte y sofisticación. Aquí, el sabor se une con el estilo para ofrecerte una experiencia culinaria que trasciende lo ordinario y celebra lo extraordinario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div><!-- /.carousel -->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="row">
+        <div class="col-lg-4" id="url">
+          <h1 class="text-center"><span class="glyphicon glyphicon-th-list"></span></h1>
+          <h2 class="text-center">Reservar Ahora</h2>
+          <p>No pierdas tiempo, asegura tu lugar con solo un clic. Con nuestra plataforma, puedes crear tu reservación ahora mismo, desde donde estés, y recibir confirmación al instante.</p>
+          <p class="text-center"><a class="btn" asp-action="Crear" asp-area="Cliente" asp-controller="Reservacion">Reservar</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" id="url">
+          <h1 class="text-center"><span class="glyphicon glyphicon-map-marker"></span></h1>
+          <h2 class="text-center">Haz Pedido En Línea</h2>
+          <p>Disfruta de tus productos favoritos sin complicaciones. Explora nuestro catálogo, elige lo que más te gusta y recíbelo donde quieras. ¡Rápido, fácil y al alcance de un clic!"</p>
+          <p class="text-center"><a class="btn" href="#" role="button">Pedir</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" id="url">
+          <h1 class="text-center"><span class="glyphicon glyphicon-user"></span></h1>
+          <h2 class="text-center">Crea Una Cuenta</h2>
+          <p>Únete a nuestra comunidad en segundos. Disfruta de beneficios exclusivos, acceso personalizado y una experiencia hecha a tu medida. ¡Regístrate ahora y empieza a explorar todo lo que tenemos para ti!</p>
+          <p class="text-center"><a class="btn" role="button">Crear</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+
+    <div class="container marketing">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading"><i>Fibonacci</i>: Donde el arte de los sabores sigue su secuencia perfecta.</h2>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://images.pexels.com/photos/3745526/pexels-photo-3745526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Sigue la secuencia... hasta el último plato de tu vida.</h2>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://images.pexels.com/photos/17792629/pexels-photo-17792629/free-photo-of-holding-a-plate-with-a-piece-of-cake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Cada bocado en Fibonacci es una obra maestra culinaria.</h2>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://images.pexels.com/photos/2977515/pexels-photo-2977515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-holder-rendered="true">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("body").addClass("fade-in");
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous" asp-append-version="true"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+</body>
+</html>

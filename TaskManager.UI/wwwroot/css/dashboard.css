@@ -14,7 +14,7 @@
     width: 250px;
     height: 100%;
     overflow-y: auto;
-    background: #000;
+    background: #1C75BC;
     padding-top: 15px;
     transition: all 0.5s ease;
 }
@@ -61,7 +61,7 @@
                 display: block;
                 position: relative;
                 text-decoration: none;
-                color: #999999;
+                color: white;
             }
 
                 .sidebar ul li a [class*="icon"] {
@@ -75,7 +75,7 @@
                 }
 
     .sidebar .sidebar__main {
-        border-bottom: 1px solid #373737;
+        border-bottom: 1px solid white;
     }
 
     .sidebar .sidebar__toggled {
@@ -85,7 +85,7 @@
 
     .sidebar ul li.title,
     .sidebar .sidebar__main--brand a {
-        color: #999999;
+        color: white;
     }
 
 .dropdown-toggle {
@@ -103,7 +103,7 @@
     }
 
 .sidebar__toggled {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid white;
 }
 
 #main-toggle:after {
@@ -140,4 +140,48 @@
         position: relative;
         margin-right: 50px;
     }
+}
+
+@media(max-width: 768px){
+    #url {
+        margin-top: 2%;
+        background-color: #f0f6ff;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    #url {
+        margin-top: 2%;
+        background-color: #f0f6ff;
+    }
+}
+.btn {
+    background-color: #1C75BC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+.glyphicon{
+    color: #1C75BC;
+    margin-top: 2%;
+}
+
+#url:hover {
+    background-color: #1C75BC;
+    color: white;
+
+    
+}
+#url:hover .glyphicon{
+        color: white;
+}
+#url:hover .btn{
+    background-color: white;
+    color: #1C75BC;
 }

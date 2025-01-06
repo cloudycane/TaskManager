@@ -1,0 +1,51 @@
+﻿@model SuministradorDTO
+
+<h1 class="text-center">Editar los datos de suministrador</h1>
+
+@using (Html.BeginForm("Editar", "PortalSuministrador", FormMethod.Post, new { @style = "margin-top: 12%" }))
+{
+
+    <div class="container">
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.RazonSocial)
+            @Html.TextBoxFor(model => model.RazonSocial, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.RazonSocial, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.DireccionLinea1)
+            @Html.TextBoxFor(model => model.DireccionLinea1, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.DireccionLinea1, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.DireccionLinea2)
+            @Html.TextBoxFor(model => model.DireccionLinea2, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.DireccionLinea2, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Localidad)
+            @Html.TextBoxFor(model => model.Localidad, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Localidad, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Provincia)
+            @Html.TextBoxFor(model => model.Provincia, new { @class = "form-control"  })
+            @Html.ValidationMessageFor(model => model.Provincia, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Pais)
+            @Html.TextBoxFor(model => model.Pais, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Pais, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12" id="btnCrear">
+            <a class="btn btn-info" asp-action="Index" asp-area="Suministrador" asp-controller="PortalSuministrador" asp-route-id="Model.Id">Volver al Inicio</a>
+            <button type="submit" class="btn btn-primary">Editar Suministrador</button>
+        </div>
+
+    </div>
+}

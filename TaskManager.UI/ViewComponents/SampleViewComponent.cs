@@ -1,13 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TaskManager.Aplicacion.Interfaces;
 
 namespace TaskManager.UI.ViewComponents
 {
     public class SampleViewComponent : ViewComponent
     {
-        
-        public async Task<IViewComponentResult> InvokeAsync()
+        private readonly IReservacionRepositorio _reservacionRepositorio;
+
+        public SampleViewComponent(IReservacionRepositorio reservacionRepositorio)
+		{
+			_reservacionRepositorio = reservacionRepositorio;
+		}
+		public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View();
+			return View();
         }
     }
 }

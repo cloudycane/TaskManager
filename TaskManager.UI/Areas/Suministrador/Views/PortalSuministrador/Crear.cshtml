@@ -1,0 +1,57 @@
+﻿@model SuministradorModel
+
+<h1 class="text-center">Crear un suministrador</h1>
+
+@using (Html.BeginForm("Crear", "PortalSuministrador", FormMethod.Post, new { @style = "margin-top: 12%" }))
+{
+   
+    <div class="container">
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.RazonSocial)
+            @Html.TextBoxFor(model => model.RazonSocial, new { @class = "form-control", @placeholder = "Ingrese su razón social" })
+            @Html.ValidationMessageFor(model => model.RazonSocial, "", new { @class = "text-danger" })
+        </div>
+        
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.DireccionLinea1)
+            @Html.TextBoxFor(model => model.DireccionLinea1, new { @class = "form-control", @placeholder = "Ingrese su dirección (Línea 1)" })
+            @Html.ValidationMessageFor(model => model.DireccionLinea1, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.DireccionLinea2)
+            @Html.TextBoxFor(model => model.DireccionLinea2, new { @class = "form-control", @placeholder = "Ingrese su dirección (Línea 2)" })
+            @Html.ValidationMessageFor(model => model.DireccionLinea2, "", new { @class = "text-danger" })
+        </div>
+        
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Localidad)
+            @Html.TextBoxFor(model => model.Localidad, new { @class = "form-control", @placeholder = "Ingrese la localidad" })
+            @Html.ValidationMessageFor(model => model.Localidad, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Provincia)
+            @Html.TextBoxFor(model => model.Provincia, new { @class = "form-control", @placeholder = "Ingrese la provincia" })
+            @Html.ValidationMessageFor(model => model.Provincia, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-4">
+            @Html.LabelFor(model => model.Pais)
+            @Html.TextBoxFor(model => model.Pais, new { @class = "form-control", @placeholder = "Ingrese el país" })
+            @Html.ValidationMessageFor(model => model.Pais, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12" id="btnCrear">
+            <a class="btn btn-info" asp-action="Index" asp-area="Suministrador" asp-controller="PortalSuministrador">Volver al Inicio</a>
+            <button type="submit" class="btn btn-primary">Crear Suministrador</button>
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,1 +1,26 @@
-﻿<h1>Component works!</h1>
+﻿@using TaskManager.UI.ViewModels
+@model ListadoReservacionesViewModel
+
+<h3 class="text-center">Reservaciones Hoy - @DateTime.Now.Date.ToString("d")</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Estado</th>
+			<th>Nombre y Apellidos</th>
+			<th>Hora</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var reservacionHoy in Model.ListadoReservaciones
+				.OrderBy(hora => hora.HoradeReservacion)
+				.Where(reservacion => reservacion.FechadeReservacion.Date == DateTime.Now.Date))
+		{
+			<tr>
+				<td>@reservacionHoy.EstadoReservacionEnum</td>
+				<td>@reservacionHoy.Nombre @reservacionHoy.Apellidos</td>
+				<td>@reservacionHoy.HoradeReservacion.ToString("hh") : @reservacionHoy.HoradeReservacion.ToString("mm")</td>
+			</tr>
+		}
+
+	</tbody>
+</table>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\TaskManager.UI.csproj": {}
+    "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\TaskManager.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+    "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
         "projectName": "TaskManager.Aplicacion",
-        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
         "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\obj\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
               }
             }
           }
@@ -47,8 +48,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net6.0": {
@@ -75,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+    "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
         "projectName": "TaskManager.Dominio",
-        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj",
         "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -101,6 +101,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,8 +119,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net6.0": {
@@ -140,18 +140,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
+    "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
         "projectName": "TaskManager.Infraestructura",
-        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj",
         "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\obj\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,17 +166,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
               },
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
               }
             }
           }
@@ -190,8 +191,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net6.0": {
@@ -200,6 +200,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.5.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -230,18 +238,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\TaskManager.UI.csproj": {
+    "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\TaskManager.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\TaskManager.UI.csproj",
+        "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\TaskManager.UI.csproj",
         "projectName": "TaskManager.UI",
-        "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\TaskManager.UI.csproj",
+        "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\TaskManager.UI.csproj",
         "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.UI\\obj\\",
+        "outputPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -256,20 +264,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj"
               },
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\TaskManager.Dominio.csproj"
               },
-              "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj"
+              "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj"
               }
             }
           }
@@ -283,13 +292,20 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.5.2, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.36, )"
@@ -309,6 +325,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[6.0.36, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.4.0, )"
             }
           },
           "imports": [
@@ -330,7 +350,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

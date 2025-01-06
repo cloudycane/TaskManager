@@ -8,11 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="EPPlus" Version="7.5.2" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36" />
+    <PackageReference Include="Rotativa.AspNetCore" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Suministrador\" />
+    <Folder Include="Areas\Inventario\" />
+    <Folder Include="Areas\Contabilidad\" />
+    <Folder Include="Areas\Marketing\" />
+    <Folder Include="Areas\Ventas\" />
+    <Folder Include="Areas\RRHH\" />
+    <Folder Include="Areas\Produccion\" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4LH6luBg4TM=",
+  "dgSpecHash": "gHIxWnxYLFA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gesel\\source\\repos\\TaskManager.UI\\TaskManager\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
+  "projectFilePath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gesel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\gesel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

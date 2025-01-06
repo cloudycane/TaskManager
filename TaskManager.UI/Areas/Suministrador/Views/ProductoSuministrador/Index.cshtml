@@ -1,0 +1,50 @@
+﻿@model ListadoProductosSuministradorViewModel
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        Swal.fire({
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    </script>
+}
+
+<h1 class="text-center">Listado de productos suministrados</h1>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Unidad</th>
+                <th>Proveedor</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model.Productos)
+            {
+                <tr>
+                    <td>@producto.NombreProducto</td>
+                    <td>@producto.DescripcionProducto</td>
+                    <td>@producto.PrecioProducto</td>
+                    <td>@producto.CantidadProductoEnVenta</td>
+                    <td>@producto.UnidadProductoEnum</td>
+                    <td>@producto.SuministradorId</td>
+                    <td>@producto.CategoriaProductoSuministradorEnum</td>
+                    <td>
+                        <a class="btn btn-info" asp-action="Editar" asp-area="Suministrador" asp-controller="ProductoSuministrador" asp-route-id="@producto.Id">Editar</a>
+                        <a class="btn btn-danger" asp-action="Eliminar" asp-area="Suministrador" asp-controller="ProductoSuministrador" asp-route-id="@producto.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

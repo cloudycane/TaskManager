@@ -1,0 +1,58 @@
+﻿@model ReservacionModel
+
+@if (TempData["SuccessMessage"] != null)
+{
+	<script>
+		Swal.fire({
+			title: '¡Éxito!',
+			text: '@TempData["SuccessMessage"]',
+			icon: 'success',
+			confirmButtonText: 'OK'
+		});
+	</script>
+}
+
+
+<h2 class="text-center">Comprobante de la reservación</h2>
+
+<div class="container" style="margin-top: 8%">
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.EstadoReservacionEnum)
+        <h5>@Model.EstadoReservacionEnum</h5>
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.Nombre)
+        <h5>@Model.Nombre</h5>
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.Apellidos)
+        <h5>@Model.Apellidos</h5>
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.Telefono)
+        <h5>@Model.Telefono</h5>
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.CorreoElectronico)
+        <h5>@Model.CorreoElectronico</h5>
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.FechadeReservacion)
+        <h5>@Model.FechadeReservacion.ToString("d")</h5>
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.HoradeReservacion)
+        <h5>@Model.HoradeReservacion.ToString("hh") : @Model.HoradeReservacion.ToString("mm")</h5>
+    </div>
+
+    <div class="col-lg-12">
+        <a asp-area="Cliente" asp-controller="Home" asp-action="Index" class="btn btn-info">Regresar</a>
+        <a asp-area="Cliente" asp-controller="Reservacion" asp-action="ReservacionPDF" class="btn btn-primary" asp-route-id="@Model.Id">Imprimir</a>
+    </div>
+</div>
+

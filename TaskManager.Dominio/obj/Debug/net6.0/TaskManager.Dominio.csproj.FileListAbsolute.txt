@@ -22,3 +22,15 @@ C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Dominio\obj\D
 C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Dominio\obj\Debug\net6.0\refint\TaskManager.Dominio.dll
 C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.pdb
 C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Dominio\obj\Debug\net6.0\ref\TaskManager.Dominio.dll
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\bin\Debug\net6.0\TaskManager.Dominio.deps.json
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\bin\Debug\net6.0\TaskManager.Dominio.dll
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\bin\Debug\net6.0\TaskManager.Dominio.pdb
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.AssemblyInfoInputs.cache
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.AssemblyInfo.cs
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.sourcelink.json
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.dll
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\refint\TaskManager.Dominio.dll
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\TaskManager.Dominio.pdb
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Dominio\obj\Debug\net6.0\ref\TaskManager.Dominio.dll

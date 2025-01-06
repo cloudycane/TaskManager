@@ -9,10 +9,13 @@ namespace TaskManager.Aplicacion.Interfaces
 {
     public interface IReservacionRepositorio
     {
-        Task CrearReservacionAsync(ReservacionModel reservacion);
-        Task EditarReservacion(ReservacionModel reservacionModel);
+		Task<int> CrearReservacionAsync(ReservacionModel reservacion);
+		Task EditarReservacion(ReservacionModel reservacionModel);
         Task EliminarReservacion(int id);
         Task<IEnumerable<ReservacionModel>> ObtenerListadoReservacion();
-        Task<ReservacionModel> ObtenerReservacionPorId(int id);
+        Task<MemoryStream> ObtenerReservacionCSV();
+        Task<MemoryStream> ObtenerReservacionExcel();
+        Task<ReservacionModel> ObtenerReservacionPorFecha(DateTime fecha);
+		Task<ReservacionModel> ObtenerReservacionPorId(int id);
     }
 }

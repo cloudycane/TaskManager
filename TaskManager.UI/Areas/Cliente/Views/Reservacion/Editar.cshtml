@@ -44,7 +44,7 @@
 
                 <div class="col-lg-4">
                     @Html.LabelFor(model => model.FechadeReservacion)
-                    @Html.TextBoxFor(model => model.FechadeReservacion, new { @class = "form-control", @type = "date" })
+                    @Html.TextBoxFor(model => model.FechadeReservacion, new { @class = "form-control", @type = "datetime" })
                     @Html.ValidationMessageFor(model => model.FechadeReservacion, "", new { @class = "text-danger" })
                 </div>
 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using TaskManager.Dominio.Entidades;
 
 namespace TaskManager.Infraestructura.Data
@@ -15,11 +10,13 @@ namespace TaskManager.Infraestructura.Data
         }
 
         public DbSet<ReservacionModel> Reservaciones { get; set; }
-       
-
+        public DbSet<SuministradorModel> Suministradores { get; set; }
+        public DbSet<ProductoSuministradorModel> ProductosSuministradores { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+
         }
     }
 }
