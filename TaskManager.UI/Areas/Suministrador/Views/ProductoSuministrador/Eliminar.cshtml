@@ -1,1 +1,69 @@
-﻿
+﻿@model ProductoSuministradorDTO
+
+<h1 class="text-center">Eliminar Producto Suministrador</h1>
+
+
+@using (Html.BeginForm("Eliminar", "ProductoSuministrador", FormMethod.Post, new { @style = "margin-top: 12%" }))
+{
+    <div class="col-lg-12">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.NombreProducto)
+        @Html.TextBoxFor(model => model.NombreProducto, new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.NombreProducto, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.DescripcionProducto)
+        @Html.TextBoxFor(model => model.DescripcionProducto, new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.DescripcionProducto, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.PrecioProducto)
+        @Html.TextBoxFor(model => model.PrecioProducto, new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.PrecioProducto, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.CantidadProductoEnVenta)
+        @Html.TextBoxFor(model => model.CantidadProductoEnVenta, new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.CantidadProductoEnVenta, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.UnidadProductoEnum)
+        @Html.DropDownListFor(model => model.UnidadProductoEnum, Html.GetEnumSelectList<UnidadesEnum>(), "", new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.UnidadProductoEnum, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.SuministradorId)
+        @Html.DropDownListFor(
+                model => model.SuministradorId,
+                new SelectList(Model.SuministradorList, "Id", "RazonSocial"),
+                "",
+                new { @class = "form-control", @disabled = true }
+                )
+
+        @Html.ValidationMessageFor(model => model.SuministradorId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.CategoriaProductoSuministradorEnum)
+        @Html.DropDownListFor(model => model.CategoriaProductoSuministradorEnum, Html.GetEnumSelectList<CategoriaProductoSuministradorEnum>(), "", new { @class = "form-control", @disabled = true })
+        @Html.ValidationMessageFor(model => model.CategoriaProductoSuministradorEnum, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-12">
+        <a class="btn btn-info" asp-controller="ProductoSuministrador" asp-action="Index" asp-area="Suministrador">Volver al Inicio</a>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

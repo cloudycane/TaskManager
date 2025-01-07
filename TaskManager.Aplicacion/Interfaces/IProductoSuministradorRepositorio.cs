@@ -9,5 +9,6 @@ namespace TaskManager.Aplicacion.Interfaces
         Task EliminarProductoSuministradorAsync(int id);
         Task<IEnumerable<ProductoSuministradorModel>> ObtenerListadoProductoSuministradorAsync();
         Task<ProductoSuministradorModel> ObtenerProductoSuministradorPorIdAsync(int id);
+        Task OrdenarProducto(int productoId, int productoCantidad, OrdenAdquisicionModel ordenAdquisicion);
     }
 }

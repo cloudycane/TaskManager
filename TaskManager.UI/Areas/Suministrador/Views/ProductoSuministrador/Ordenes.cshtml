@@ -1,0 +1,75 @@
+﻿@model ListadoOrdenesAdquisicionViewModel
+
+@{
+    ViewBag.Title = "Ordenes";
+    
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+        <script>
+            Swal.fire({
+                title: '¡Éxito!',
+                text: '@TempData["SuccessMessage"]',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        </script>
+}
+
+<h1 class="text-center">Listado de Ordenes de Materias Primas</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Proveedor</th>
+            <th>Cantidad</th>
+            <th>Precio Total</th>
+            <th>Fecha de Orden</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            @foreach (var orden in Model.OrdenesAdquisicion)
+            {
+             <tr>
+                    <td>@orden.ProductoSuministrador.NombreProducto</td>
+                <td>@orden.ProductoSuministrador.CategoriaProductoSuministradorEnum</td>
+                <td>@orden.ProductoSuministrador.Suministrador.RazonSocial</td>
+                <td>@orden.CantidadDeOrden @orden.ProductoSuministrador.UnidadProductoEnum</td>
+                <td>@orden.PrecioTotal.ToString("F") euros</td>
+                <td>@orden.FechaDeCreacion.ToString("g")</td>
+                <td>
+                    @switch(orden.Estado){
+                        case EstadoOrdenProductoSuministradorEnum.PendienteDeAprobacion:
+                            <span class="label label-warning">Pendiente de Aprobación</span>
+                            break;
+                        case EstadoOrdenProductoSuministradorEnum.Aprobado:
+                            <span class="label label-success">Aprobado</span>
+                            break;
+                        case EstadoOrdenProductoSuministradorEnum.Rechazado:
+                            <span class="label label-danger">Rechazado</span>
+                            break;
+                    }
+                    
+                    </td>
+                <td>
+                    <a class="btn btn-success" asp-controller="ProductoSuministrador" asp-action="AprobarOrden" asp-route-id="@orden.Id">Aprobar <span class="glyphicon glyphicon-ok" style="color: white;"></span></a>
+                    <a class="btn btn-warning" asp-controller="ProductoSuministrador" asp-action="RechazarOrden" asp-route-id="@orden.Id">Rechazar <span class="glyphicon glyphicon-remove" style="color: white;"></span></a>
+                    <a class="btn btn-info">Editar</a>
+                    <a class="btn btn-danger">Eliminar</a>
+                    @if(orden.Estado == EstadoOrdenProductoSuministradorEnum.Aprobado)
+                    {
+                        <a class="btn btn-primary">Comprar</a>
+                    }
+                </td>
+              </tr>
+                
+            }
+        
+    </tbody>
+</table>

@@ -12,6 +12,8 @@ namespace TaskManager.Infraestructura.Data
         public DbSet<ReservacionModel> Reservaciones { get; set; }
         public DbSet<SuministradorModel> Suministradores { get; set; }
         public DbSet<ProductoSuministradorModel> ProductosSuministradores { get; set; }
+        public DbSet<OrdenAdquisicionModel> OrdenesAdquisicion { get; set; }
+        public DbSet<CompraProductoSuministradorModel> CompraProductoSuministradorFacturacion { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

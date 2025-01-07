@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\cliente\\views\\reservacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\views\\reservacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\cliente\\controllers\\reservacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\controllers\\reservacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\reservacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\reservacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.aplicacion\\interfaces\\icompraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|solutionrelative:taskmanager.aplicacion\\interfaces\\icompraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Views\\Reservacion\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T21:43:55.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReservacionController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAAJcAAAABAAAAAAAAAA==",
+              "Title": "ICompraProductoSuministradorFacturacionRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
+              "RelativeDocumentMoniker": "TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
+              "RelativeToolTip": "TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T21:42:15.092Z",
+              "WhenOpened": "2025-01-07T13:03:06.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservacionRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\ReservacionRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\ReservacionRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\ReservacionRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\ReservacionRepositorio.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAKoAAABsAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CompraProductoSuministradorFacturacionRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
+              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
+              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T20:17:15.664Z",
+              "WhenOpened": "2025-01-07T13:02:48.854Z",
               "EditorCaption": ""
             }
           ]

@@ -13,12 +13,12 @@ namespace TaskManager.Aplicacion.Servicios
             _mapper = mapper;
         }
 
-        public ProductoSuministradorModel ConvertToDTO(ProductoSuministradorDTO dto)
+        public ProductoSuministradorModel ConvertToModel(ProductoSuministradorDTO dto)
         {
             return _mapper.Map<ProductoSuministradorModel>(dto);
         }
 
-        public ProductoSuministradorDTO ConvertToModel (ProductoSuministradorModel model)
+        public ProductoSuministradorDTO ConvertToDTO(ProductoSuministradorModel model)
         {
             return _mapper.Map<ProductoSuministradorDTO>(model);
         }

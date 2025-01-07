@@ -26,6 +26,8 @@ builder.Services.AddScoped<ProductoSuministradorService>();
 builder.Services.AddScoped<IReservacionRepositorio, ReservacionRepositorio>(); 
 builder.Services.AddScoped<ISuministradorRepositorio, SuministradorRepositorio>();
 builder.Services.AddScoped<IProductoSuministradorRepositorio, ProductoSuministradorRepositorio>();
+builder.Services.AddScoped<IOrdenarProductoSuministradorRepositorio, OrdenarProductoSuministradorRepositorio>();
+builder.Services.AddScoped<IUnitofWork, UnitofWork>();
 
 var app = builder.Build();
 

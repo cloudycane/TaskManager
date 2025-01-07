@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using TaskManager.Dominio.Enum;
 
 namespace TaskManager.Dominio.Entidades
@@ -37,6 +36,7 @@ namespace TaskManager.Dominio.Entidades
         [Required(ErrorMessage = "El campo {0} es requerido.")]
         [Display(Name = "Suministrador")]
         public int SuministradorId { get; set; }    
-        public IEnumerable<SuministradorModel> Suministrador { get; set; }
+        public IEnumerable<SuministradorModel> SuministradorList { get; set; } 
+        public SuministradorModel Suministrador { get; set; }
     }
 }

@@ -42,7 +42,7 @@
         @Html.LabelFor(model => model.SuministradorId)
         @Html.DropDownListFor(
                 model => model.SuministradorId,
-                new SelectList(Model.Suministrador, "Id", "RazonSocial"),
+                new SelectList(Model.SuministradorList, "Id", "RazonSocial"),
                 "", 
                 new { @class = "form-control" } 
                 )

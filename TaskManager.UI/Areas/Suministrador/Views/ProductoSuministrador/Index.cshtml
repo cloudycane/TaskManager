@@ -18,6 +18,7 @@
     <table class="table table-striped">
         <thead>
             <tr>
+                <th>Ordenar</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Precio</th>
@@ -32,16 +33,27 @@
             @foreach (var producto in Model.Productos)
             {
                 <tr>
+                    <td>
+                        <form asp-controller="ProductoSuministrador" asp-action="Ordenar" method="post">
+                            <input type="hidden" name="productoId" value="@producto.Id" />
+                            <div class="form-group">
+                                <label for="quantity">Cantidad a ordenar:</label>
+                                <input type="number" name="productoCantidad" class="form-control" min="1" value="1" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="float: right;">Ordenar</button>
+                        </form>
+                    </td>
                     <td>@producto.NombreProducto</td>
                     <td>@producto.DescripcionProducto</td>
                     <td>@producto.PrecioProducto</td>
                     <td>@producto.CantidadProductoEnVenta</td>
                     <td>@producto.UnidadProductoEnum</td>
-                    <td>@producto.SuministradorId</td>
+                    <td>@producto.Suministrador.RazonSocial</td>
                     <td>@producto.CategoriaProductoSuministradorEnum</td>
                     <td>
                         <a class="btn btn-info" asp-action="Editar" asp-area="Suministrador" asp-controller="ProductoSuministrador" asp-route-id="@producto.Id">Editar</a>
                         <a class="btn btn-danger" asp-action="Eliminar" asp-area="Suministrador" asp-controller="ProductoSuministrador" asp-route-id="@producto.Id">Eliminar</a>
+                        
                     </td>
                 </tr>
             }

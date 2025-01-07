@@ -33,6 +33,7 @@ namespace TaskManager.Dominio.Entidades.DTOs
         [Display(Name = "Categoria Producto")]
         public CategoriaProductoSuministradorEnum CategoriaProductoSuministradorEnum { get; set; }
         public int SuministradorId { get; set; }
-        public IEnumerable<SuministradorModel> Suministrador { get; set; }
+        public SuministradorModel Suministrador { get; set; }
+        public IEnumerable<SuministradorModel> SuministradorList { get; set; } 
     }
 }

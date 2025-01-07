@@ -22,7 +22,8 @@ namespace TaskManager.Aplicacion.Servicios
                 .ForMember(dest => dest.Suministrador,
                 opt => opt.MapFrom(src => src.Suministrador))
                 .ForMember(dest => dest.UnidadProductoEnum,
-                opt => opt.MapFrom(src => src.UnidadProductoEnum));
+                opt => opt.MapFrom(src => src.UnidadProductoEnum))
+                ;
 
             CreateMap<ProductoSuministradorModel, ProductoSuministradorDTO>()
                 .ForMember(dest => dest.NombreProducto,

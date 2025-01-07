@@ -22,6 +22,131 @@ namespace TaskManager.Infraestructura.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ApellidoRepresentante")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CIF")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CodigoPostal")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CorreoElectronicoEmpresa")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DireccionLinea1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DireccionLinea2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EstadoDeCompra")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FacturacionID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaDeEmision")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double?>("GastosDeEnvio")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("GastosDeMantenimiento")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Localidad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MetodoDePago")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreLegalDeLaEmpresa")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreRepresentante")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OrdenAdquisicionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PaginaWebEmpresa")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Provincia")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("TasaDeDescuento")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("TasaDeIva")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("TasaDeTransporte")
+                        .HasColumnType("float");
+
+                    b.Property<string>("TelefonoEmpresa")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TerminosPago")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrdenAdquisicionId");
+
+                    b.ToTable("CompraProductoSuministradorFacturacion");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CantidadDeOrden")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CompraProductoSuministradorModelId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaDeCreacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("HoraDeCreacion")
+                        .HasColumnType("time");
+
+                    b.Property<double>("PrecioTotal")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductoSuministradorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompraProductoSuministradorModelId");
+
+                    b.HasIndex("ProductoSuministradorId");
+
+                    b.ToTable("OrdenesAdquisicion");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
                 {
                     b.Property<int>("Id")
@@ -46,6 +171,9 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int?>("OrdenAdquisicionModelId")
+                        .HasColumnType("int");
+
                     b.Property<double>("PrecioProducto")
                         .HasColumnType("float");
 
@@ -56,6 +184,10 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrdenAdquisicionModelId");
+
+                    b.HasIndex("SuministradorId");
 
                     b.ToTable("ProductosSuministradores");
                 });
@@ -151,16 +283,67 @@ namespace TaskManager.Infraestructura.Migrations
                     b.ToTable("Suministradores");
                 });
 
-            modelBuilder.Entity("TaskManager.Dominio.Entidades.SuministradorModel", b =>
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", b =>
                 {
-                    b.HasOne("TaskManager.Dominio.Entidades.ProductoSuministradorModel", null)
-                        .WithMany("Suministrador")
-                        .HasForeignKey("ProductoSuministradorModelId");
+                    b.HasOne("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", "OrdenAdquisicion")
+                        .WithMany()
+                        .HasForeignKey("OrdenAdquisicionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrdenAdquisicion");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", null)
+                        .WithMany("Ordenes")
+                        .HasForeignKey("CompraProductoSuministradorModelId");
+
+                    b.HasOne("TaskManager.Dominio.Entidades.ProductoSuministradorModel", "ProductoSuministrador")
+                        .WithMany()
+                        .HasForeignKey("ProductoSuministradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductoSuministrador");
                 });
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
                 {
+                    b.HasOne("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", null)
+                        .WithMany("Productos")
+                        .HasForeignKey("OrdenAdquisicionModelId");
+
+                    b.HasOne("TaskManager.Dominio.Entidades.SuministradorModel", "Suministrador")
+                        .WithMany()
+                        .HasForeignKey("SuministradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Suministrador");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.SuministradorModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.ProductoSuministradorModel", null)
+                        .WithMany("SuministradorList")
+                        .HasForeignKey("ProductoSuministradorModelId");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", b =>
+                {
+                    b.Navigation("Ordenes");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
+                {
+                    b.Navigation("Productos");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
+                {
+                    b.Navigation("SuministradorList");
                 });
 #pragma warning restore 612, 618
         }
