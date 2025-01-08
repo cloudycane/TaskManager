@@ -5,6 +5,7 @@
         PendienteDePago = 0, 
         EnProceso = 1,  
         PagoRealizado = 2,
-        Cancelado = 3
+        Cancelado = 3,
+        ProductoRecibido = 4
     }
 }

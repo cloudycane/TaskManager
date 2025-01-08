@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.aplicacion\\interfaces\\icompraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|solutionrelative:taskmanager.aplicacion\\interfaces\\icompraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\controllers\\comprarproductosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\controllers\\comprarproductosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\controllers\\productosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\controllers\\productosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.dominio\\enum\\estadodecompraenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|solutionrelative:taskmanager.dominio\\enum\\estadodecompraenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\ordenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\ordenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICompraProductoSuministradorFacturacionRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Aplicacion\\Interfaces\\ICompraProductoSuministradorFacturacionRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "EstadoDeCompraEnum.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Enum\\EstadoDeCompraEnum.cs",
+              "RelativeDocumentMoniker": "TaskManager.Dominio\\Enum\\EstadoDeCompraEnum.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Enum\\EstadoDeCompraEnum.cs",
+              "RelativeToolTip": "TaskManager.Dominio\\Enum\\EstadoDeCompraEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T13:03:06.589Z",
+              "WhenOpened": "2025-01-08T01:55:44.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ProductoSuministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T01:24:05.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CompraProductoSuministradorFacturacionRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
               "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
               "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
               "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwDIAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T13:02:48.854Z",
+              "WhenOpened": "2025-01-08T01:12:25.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ordenes.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Ordenes.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Ordenes.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Ordenes.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Ordenes.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T01:10:40.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T01:10:33.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComprarProductoSuministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAEYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T00:54:51.579Z",
               "EditorCaption": ""
             }
           ]

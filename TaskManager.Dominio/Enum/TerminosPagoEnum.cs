@@ -11,5 +11,6 @@ namespace TaskManager.Dominio.Enum
         treintaDias = 0,
         sesentaDias = 1,
         noventaDias = 2,
+        noEspecificado = 3
     }
 }

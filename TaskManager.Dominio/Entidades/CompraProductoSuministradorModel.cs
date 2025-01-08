@@ -9,8 +9,6 @@ namespace TaskManager.Dominio.Entidades
         public int OrdenAdquisicionId { get; set; }
         public OrdenAdquisicionModel OrdenAdquisicion { get; set; }
         public IEnumerable<OrdenAdquisicionModel> Ordenes { get; set; }
-        public string NombreRepresentante { get; set; }
-        public string ApellidoRepresentante { get; set; }
         public string PaginaWebEmpresa { get; set; }
         public string CorreoElectronicoEmpresa { get; set; }
         public string TelefonoEmpresa { get; set; }
@@ -42,8 +40,9 @@ namespace TaskManager.Dominio.Entidades
             string year = DateTime.Now.Year.ToString();
             string month = DateTime.Now.Month.ToString("D2");
             string day = DateTime.Now.Day.ToString("D2");
-            return $"{companyAbbreviation}-{year}{month}{day}";
-        }
+            string uniqueID = Guid.NewGuid().ToString("N").Substring(0, 3); 
+            return $"{companyAbbreviation}-{year}{month}{day}-{uniqueID}";
 
+        }
     }
 }

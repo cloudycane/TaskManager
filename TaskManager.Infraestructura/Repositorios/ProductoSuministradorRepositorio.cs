@@ -76,7 +76,7 @@ namespace TaskManager.Infraestructura.Repositorios
         public async Task OrdenarProducto(int productoId, int productoCantidad, OrdenAdquisicionModel ordenAdquisicion)
         {
             var productoSuministrador = await ObtenerProductoSuministradorPorIdAsync(productoId);
-            var carritoItem = await _context.OrdenesAdquisicion.SingleOrDefaultAsync(o => o.ProductoSuministradorId == productoId);
+            var carritoItem = await _context.OrdenesAdquisicion.FirstOrDefaultAsync(o => o.ProductoSuministradorId == productoId);
 
             if (carritoItem != null && carritoItem.ProductoSuministrador != null)
             {

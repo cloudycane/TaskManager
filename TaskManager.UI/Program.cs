@@ -22,11 +22,13 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ReservacionService>();
 builder.Services.AddScoped<SuministradorService>();
 builder.Services.AddScoped<ProductoSuministradorService>();
+builder.Services.AddScoped<ComprarProductoSuministradorService>();
 
 builder.Services.AddScoped<IReservacionRepositorio, ReservacionRepositorio>(); 
 builder.Services.AddScoped<ISuministradorRepositorio, SuministradorRepositorio>();
 builder.Services.AddScoped<IProductoSuministradorRepositorio, ProductoSuministradorRepositorio>();
 builder.Services.AddScoped<IOrdenarProductoSuministradorRepositorio, OrdenarProductoSuministradorRepositorio>();
+builder.Services.AddScoped<ICompraProductoSuministradorFacturacionRepositorio, CompraProductoSuministradorFacturacionRepositorio>();
 builder.Services.AddScoped<IUnitofWork, UnitofWork>();
 
 var app = builder.Build();

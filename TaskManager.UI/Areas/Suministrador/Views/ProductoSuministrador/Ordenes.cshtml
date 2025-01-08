@@ -64,7 +64,12 @@
                     <a class="btn btn-danger">Eliminar</a>
                     @if(orden.Estado == EstadoOrdenProductoSuministradorEnum.Aprobado)
                     {
-                        <a class="btn btn-primary">Comprar</a>
+
+                        <form asp-controller="ComprarProductoSuministrador" asp-action="Comprar" method="post">
+                            <input type="hidden" name="compraId" value="@orden.Id" />
+                            <button type="submit" class="btn btn-primary" style="float: right;">Comprar</button>
+                        </form>
+                    
                     }
                 </td>
               </tr>

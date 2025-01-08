@@ -8,6 +8,7 @@
         TransferenciaBancaria = 3,
         PagosEnLinea = 4, 
         Cheques = 5, 
-        PagoEnQuotas = 6
+        PagoEnQuotas = 6,
+        NoEspecificado = 7
     }
 }

@@ -30,9 +30,6 @@ namespace TaskManager.Infraestructura.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("ApellidoRepresentante")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CIF")
                         .HasColumnType("nvarchar(max)");
 
@@ -73,9 +70,6 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NombreLegalDeLaEmpresa")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreRepresentante")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("OrdenAdquisicionId")
