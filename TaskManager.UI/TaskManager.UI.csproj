@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Contabilidad\" />
-    <Folder Include="Areas\Inventario\Controllers\" />
     <Folder Include="Areas\Inventario\Views\InventarioProductos\" />
     <Folder Include="Areas\Marketing\" />
     <Folder Include="Areas\Ventas\" />

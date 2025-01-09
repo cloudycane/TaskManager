@@ -93,5 +93,35 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             return NotFound();
 
         }
+
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            var compra = await _compraProductoSuministradorFacturacionRepositorio.ObtenerListadoCompraProductoSuministradorPorIdAsync(id);
+
+            if (compra == null)
+            {
+                return NotFound();
+            }
+
+            var compraDTO = _comprarProductoSuministradorService.ConvertToDTO(compra);
+            return View(compraDTO);
+        }
+
+        [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> EliminarConfirmacion(int id)
+        {
+            var compra = await _compraProductoSuministradorFacturacionRepositorio.ObtenerListadoCompraProductoSuministradorPorIdAsync(id);
+            if (compra == null)
+            {
+                return NotFound();
+            }
+
+            await _compraProductoSuministradorFacturacionRepositorio.EliminarCompra(id);
+            TempData["SuccessMessage"] = "Enhorabuena, ha sido eliminada exitosamente";
+            return RedirectToAction("Index");  
+
+        }
     }
 }

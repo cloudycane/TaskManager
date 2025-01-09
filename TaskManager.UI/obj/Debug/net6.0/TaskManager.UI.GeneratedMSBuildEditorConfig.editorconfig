@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VtaW5pc3RyYWRvclxWaWV3c1xDb21wcmFyUHJvZHVjdG9TdW1pbmlzdHJhZG9yXENvbXByYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Suministrador/Views/ComprarProductoSuministrador/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VtaW5pc3RyYWRvclxWaWV3c1xDb21wcmFyUHJvZHVjdG9TdW1pbmlzdHJhZG9yXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Suministrador/Views/ComprarProductoSuministrador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VtaW5pc3RyYWRvclxWaWV3c1xDb21wcmFyUHJvZHVjdG9TdW1pbmlzdHJhZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

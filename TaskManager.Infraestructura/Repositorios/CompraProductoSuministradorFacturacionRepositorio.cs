@@ -28,7 +28,7 @@ namespace TaskManager.Infraestructura.Repositorios
 
         public async Task<CompraProductoSuministradorModel> ObtenerListadoCompraProductoSuministradorPorIdAsync(int id)
         {
-            return await _context.CompraProductoSuministradorFacturacion.Where(c => c.Id == id)
+            return await _context.CompraProductoSuministradorFacturacion.Include(o => o.OrdenAdquisicion).ThenInclude(p => p.ProductoSuministrador).ThenInclude(s => s.Suministrador).Where(c => c.Id == id)
                          .FirstOrDefaultAsync();
         }
 
@@ -77,6 +77,17 @@ namespace TaskManager.Infraestructura.Repositorios
         // EDITAR 
 
         // ELIMINAR 
+
+        public async Task EliminarCompra(int id)
+        {
+            var compra = await ObtenerListadoCompraProductoSuministradorPorIdAsync(id);
+
+            if (compra != null)
+            {
+                _context.CompraProductoSuministradorFacturacion.Remove(compra);
+                await _context.SaveChangesAsync();
+            }
+        }
 
         // FACTURAR (PDF)
 

@@ -1,0 +1,49 @@
+﻿@model CompraProductoSuministradorDTO
+
+<h1 class="text-center">¿Estás seguro/a de eliminar esta compra?</h1>
+<form asp-action="Eliminar" asp-controller="ComprarProductoSuministrador" method="post" style="margin: 12%;">
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.ProductoSuministrador.NombreProducto)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.ProductoSuministrador.NombreProducto, "", new { @class= "form-control", @disabled = true})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.ProductoSuministrador.DescripcionProducto)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.ProductoSuministrador.DescripcionProducto, "", new { @class = "form-control", @disabled = true })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.ProductoSuministrador.Suministrador.RazonSocial)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.ProductoSuministrador.Suministrador.RazonSocial, "", new { @class = "form-control", @disabled = true })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.PrecioTotal)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.PrecioTotal, "", new { @class = "form-control", @disabled = true })
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.CantidadDeOrden)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.CantidadDeOrden, "", new { @class = "form-control", @disabled = true})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.OrdenAdquisicion.ProductoSuministrador.UnidadProductoEnum)
+        @Html.TextBoxFor(model => model.OrdenAdquisicion.ProductoSuministrador.UnidadProductoEnum, "", new { @class = "form-control", @disabled = true})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.MetodoDePago)
+        @Html.TextBoxFor(model => model.MetodoDePago, "", new { @class = "form-control", @disabled = true})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.FechaDeEmision)
+        @Html.TextBoxFor(model => model.FechaDeEmision, "", new { @class = "form-control", @disabled = true })
+    </div>
+
+    <div class="col-lg-12">
+        <a asp-action="Index" asp-controller="ComprarProductoSuministrador" asp-area="Suministrador" class="btn btn-info">Volver al Inicio</a>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    </div>
+</form>
