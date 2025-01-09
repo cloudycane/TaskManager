@@ -1,6 +1,9 @@
 # Task Manager (Gestión de Tareas) Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
 
+
+https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
+
 https://github.com/user-attachments/assets/d0b68d97-d880-4645-bb2e-f0a6420e7d0d
 
 
