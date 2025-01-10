@@ -1,1 +1,45 @@
-﻿
+﻿@model ListadoInventarioMateriaPrimaViewModel
+
+<h1 class="text-center">Listado de Materias Primas en Inventario</h1>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Producto Nombre</th>
+                <th>Cantidad Total</th>
+                <th>Categoría</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+                var groupedProducts = Model.ListadoInventarioMateriasPrimasViewModel
+                .GroupBy(p => new
+                {
+                    p.CompraProductoSuministrador.OrdenAdquisicion.ProductoSuministrador.NombreProducto,
+                    p.CategoriaProductoInventario,
+                    p.EstadoProductoInventario
+                })
+                .Select(g => new
+                {
+                    NombreProducto = g.Key.NombreProducto,
+                    CantidadTotal = g.Sum(p => p.CantidadProductoEnInventario),
+                    Categoria = g.Key.CategoriaProductoInventario,
+                    Estado = g.Key.EstadoProductoInventario
+                });
+            }
+
+            @foreach (var producto in groupedProducts)
+            {
+                <tr>
+                    <td>@producto.NombreProducto</td>
+                    <td>@producto.CantidadTotal</td>
+                    <td>@producto.Categoria</td>
+                    <td>@producto.Estado</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

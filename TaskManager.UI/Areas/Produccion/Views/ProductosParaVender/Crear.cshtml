@@ -1,0 +1,70 @@
+﻿@model ProductosParaVenderModel
+
+@{
+    var productosSuministradores = ViewBag.ProductosSuministradores as List<ProductoSuministradorModel>;
+}
+
+<h1 class="text-center">Crear Producto</h1>
+
+<form enctype="multipart/form-data" method="post" asp-action="Crear" asp-controller="ProductosParaVender" style="margin-top: 12%">
+
+    <div class="col-lg-3">
+        <label>Subir Imagen</label>
+        <center>
+            <img class="img-square" id="preview" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Imagen previa" width="70" height="70">
+        </center>
+        <input type="file" name="imagen" id="imagen" accept="image/jpeg,image/png" />
+    </div>
+
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.NombreProducto)
+        @Html.TextBoxFor(model => model.NombreProducto, "", new { @class = "form-control", @placeholder = "Índica el nombre del producto"})
+        @Html.ValidationMessageFor(model => model.NombreProducto, "", new { @class = "text-danger"})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.Descripcion)
+        @Html.TextBoxFor(model => model.Descripcion, "", new { @class = "form-control", @placeholder = "Pon una descripción"})
+        @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger"})
+    </div>
+
+    <div class="col-lg-4">
+        @Html.Label("Selecciona Ingredientes")
+        @foreach (var producto in productosSuministradores)
+        {
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="ingredientesIds" value="@producto.Id" id="checkbox-@producto.Id" />
+                <label class="form-check-label" for="checkbox-@producto.Id">
+                    @producto.NombreProducto
+                </label>
+            </div>
+        }
+    </div>
+
+
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.Precio)
+        @Html.TextBoxFor(model => model.Precio, "", new { @class = "form-control", @placeholder = "Índica su precio"})
+        @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-lg-12">
+        <a class="btn btn-info" asp-action="Index" asp-controller="ProductosParaVender">Volver al Inicio</a>
+        <button type="submit" class="btn btn-primary">Crear</button>
+    </div>
+</form>
+
+@{
+
+    <script src="~/js/previsualizarImagen.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('imagen').addEventListener('change', function (event) {
+                    const [file] = event.target.files;
+                    if (file) {
+                        document.getElementById('preview').src = URL.createObjectURL(file);
+                    }
+                });
+    </script>
+
+}

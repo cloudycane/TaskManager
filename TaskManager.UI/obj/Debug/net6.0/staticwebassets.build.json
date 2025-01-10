@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wvUn+bYJ9z2g1LZ9yWFX0g9IrSgwZBTn33R+PsHRFog=",
+  "Hash": "1Ptc37EjgnoLOiLgWVn9wBOYBDwq8ZuCAM+LYqQt9qE=",
   "Source": "TaskManager.UI",
   "BasePath": "_content/TaskManager.UI",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
+      "SourceId": "TaskManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\",
+      "BasePath": "_content/TaskManager.UI",
+      "RelativePath": "img/imagen_productoVender/996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg"
     },
     {
       "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\site.js",

@@ -103,6 +103,55 @@ namespace TaskManager.Infraestructura.Migrations
                     b.ToTable("CompraProductoSuministradorFacturacion");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.IngrendientesModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ingrendientes");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.InventarioMateriaPrimaModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CantidadProductoEnInventario")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoriaProductoInventario")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CompraProductoSuministradorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EstadoProductoInventario")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaDistribucion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompraProductoSuministradorId");
+
+                    b.ToTable("InventarioMateriaPrimas");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
                 {
                     b.Property<int>("Id")
@@ -141,6 +190,34 @@ namespace TaskManager.Infraestructura.Migrations
                     b.ToTable("OrdenesAdquisicion");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaDeProduccion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreProducto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Precio")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosParaVender");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
                 {
                     b.Property<int>("Id")
@@ -171,6 +248,9 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Property<double>("PrecioProducto")
                         .HasColumnType("float");
 
+                    b.Property<int?>("ProductosParaVenderModelId")
+                        .HasColumnType("int");
+
                     b.Property<int>("SuministradorId")
                         .HasColumnType("int");
 
@@ -180,6 +260,8 @@ namespace TaskManager.Infraestructura.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OrdenAdquisicionModelId");
+
+                    b.HasIndex("ProductosParaVenderModelId");
 
                     b.HasIndex("SuministradorId");
 
@@ -288,6 +370,17 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Navigation("OrdenAdquisicion");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.InventarioMateriaPrimaModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", "CompraProductoSuministrador")
+                        .WithMany()
+                        .HasForeignKey("CompraProductoSuministradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CompraProductoSuministrador");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
                 {
                     b.HasOne("TaskManager.Dominio.Entidades.CompraProductoSuministradorModel", null)
@@ -308,6 +401,10 @@ namespace TaskManager.Infraestructura.Migrations
                     b.HasOne("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", null)
                         .WithMany("Productos")
                         .HasForeignKey("OrdenAdquisicionModelId");
+
+                    b.HasOne("TaskManager.Dominio.Entidades.ProductosParaVenderModel", null)
+                        .WithMany("Ingredientes")
+                        .HasForeignKey("ProductosParaVenderModelId");
 
                     b.HasOne("TaskManager.Dominio.Entidades.SuministradorModel", "Suministrador")
                         .WithMany()
@@ -333,6 +430,11 @@ namespace TaskManager.Infraestructura.Migrations
             modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
                 {
                     b.Navigation("Productos");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
+                {
+                    b.Navigation("Ingredientes");
                 });
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>

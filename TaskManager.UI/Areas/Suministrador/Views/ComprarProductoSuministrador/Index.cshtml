@@ -118,7 +118,10 @@
                 <td>
                     <a class="btn btn-danger" asp-action="Eliminar" asp-controller="ComprarProductoSuministrador" asp-route-id="@compra.Id"><i class="bi bi-trash3-fill"></i></a>
                     <a class="btn btn-info"><i class="bi bi-pencil-square"></i></a>
-                    <a class="btn btn-success"><i class="bi bi-check-circle-fill"></i></a>
+                    <form asp-controller="InventarioMateriaPrima" asp-action="AñadirAlInventario" asp-area="Inventario" method="post">
+                        <input type="hidden" name="compraId" value="@compra.Id" />
+                        <button type="submit" class="btn btn-success" style="float: right;">Añadir Al Inventario</button>
+                    </form>
                     <a class="btn btn-primary"><i class="bi bi-printer"></i></a>
                 </td>
             </tr>

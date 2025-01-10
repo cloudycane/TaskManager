@@ -80,8 +80,21 @@ namespace TaskManager.Infraestructura.Repositorios
 
             if (carritoItem != null && carritoItem.ProductoSuministrador != null)
             {
-                carritoItem.CantidadDeOrden += productoCantidad;
-                carritoItem.PrecioTotal += productoSuministrador.PrecioProducto * productoCantidad;
+                carritoItem = new OrdenAdquisicionModel()
+                {
+                    Id = new int(),
+                    ProductoSuministradorId = productoId,
+                    Estado = 0,
+                    CantidadDeOrden = productoCantidad,
+                    FechaDeCreacion = DateTime.Now,
+                    HoraDeCreacion = TimeSpan.FromHours(DateTime.Now.Hour),
+                    PrecioTotal = productoSuministrador.PrecioProducto * productoCantidad,
+
+                };
+
+                await _context.OrdenesAdquisicion.AddAsync(carritoItem);
+                //carritoItem.CantidadDeOrden += productoCantidad;
+                //carritoItem.PrecioTotal += productoSuministrador.PrecioProducto * productoCantidad;
             }
             else
             {

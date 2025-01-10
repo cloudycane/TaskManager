@@ -3,48 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.dominio\\entidades\\inventariomateriaprimamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|solutionrelative:taskmanager.dominio\\entidades\\inventariomateriaprimamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\inventario\\controllers\\inventariomateriaprimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\inventario\\controllers\\inventariomateriaprimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\comprarproductosuministrador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\views\\productosuministrador\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.dominio\\entidades\\dtos\\compraproductosuministradordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{660A3B23-7CA2-4268-AA23-9610E9F58AE5}|TaskManager.Dominio\\TaskManager.Dominio.csproj|solutionrelative:taskmanager.dominio\\entidades\\dtos\\compraproductosuministradordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\controllers\\productosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\controllers\\productosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\suministrador\\controllers\\comprarproductosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\suministrador\\controllers\\comprarproductosuministradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\productosuministradorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\productosuministradorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\dashboard\\views\\inicio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\dashboard\\views\\inicio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,165 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InventarioMateriaPrimaModel.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Entidades\\InventarioMateriaPrimaModel.cs",
-              "RelativeDocumentMoniker": "TaskManager.Dominio\\Entidades\\InventarioMateriaPrimaModel.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Entidades\\InventarioMateriaPrimaModel.cs",
-              "RelativeToolTip": "TaskManager.Dominio\\Entidades\\InventarioMateriaPrimaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T00:39:43.231Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T23:47:49.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InventarioMateriaPrimaController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Inventario\\Controllers\\InventarioMateriaPrimaController.cs",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Inventario\\Controllers\\InventarioMateriaPrimaController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Inventario\\Controllers\\InventarioMateriaPrimaController.cs",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Inventario\\Controllers\\InventarioMateriaPrimaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T00:32:41.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Index.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Index.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Dashboard\\Views\\Inicio\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Dashboard\\Views\\Inicio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Dashboard\\Views\\Inicio\\Index.cshtml",
+              "RelativeToolTip": "TaskManager.UI\\Areas\\Dashboard\\Views\\Inicio\\Index.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T00:14:01.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CompraProductoSuministradorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Entidades\\DTOs\\CompraProductoSuministradorDTO.cs",
-              "RelativeDocumentMoniker": "TaskManager.Dominio\\Entidades\\DTOs\\CompraProductoSuministradorDTO.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Dominio\\Entidades\\DTOs\\CompraProductoSuministradorDTO.cs",
-              "RelativeToolTip": "TaskManager.Dominio\\Entidades\\DTOs\\CompraProductoSuministradorDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T00:09:31.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Eliminar.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Eliminar.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Eliminar.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Eliminar.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ProductoSuministrador\\Eliminar.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAD0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T23:39:58.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T23:33:07.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Eliminar.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Eliminar.cshtml",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Eliminar.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Eliminar.cshtml",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Views\\ComprarProductoSuministrador\\Eliminar.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T23:28:19.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CompraProductoSuministradorFacturacionRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAC0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T01:12:25.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ComprarProductoSuministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ComprarProductoSuministradorController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T22:45:17.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductoSuministradorRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\ProductoSuministradorRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\ProductoSuministradorRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\ProductoSuministradorRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\ProductoSuministradorRepositorio.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T22:41:37.826Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "00aa199a-d764-4b98-8cb4-c3297083c28f",
-        "Display": 0,
-        "X": 0,
-        "Y": 65,
-        "Width": 800,
-        "Height": 600,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductoSuministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Suministrador\\Controllers\\ProductoSuministradorController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAqwF0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T22:45:20.063Z",
+              "WhenOpened": "2025-01-10T14:28:56.215Z",
               "EditorCaption": ""
             }
           ]

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
+      "PackagePath": "staticwebassets\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg"
+    },
+    {
       "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

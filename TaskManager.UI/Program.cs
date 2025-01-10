@@ -29,6 +29,9 @@ builder.Services.AddScoped<ISuministradorRepositorio, SuministradorRepositorio>(
 builder.Services.AddScoped<IProductoSuministradorRepositorio, ProductoSuministradorRepositorio>();
 builder.Services.AddScoped<IOrdenarProductoSuministradorRepositorio, OrdenarProductoSuministradorRepositorio>();
 builder.Services.AddScoped<ICompraProductoSuministradorFacturacionRepositorio, CompraProductoSuministradorFacturacionRepositorio>();
+builder.Services.AddScoped<IInventarioMateriaPrimaRepositorio, InventarioMateriaPrimaRepositorio>();
+builder.Services.AddScoped<IIngrendientesRepositorio, IngrendientesRepositorio>();
+builder.Services.AddScoped<IProductosParaVenderRepositorio, ProductosParaVenderRepositorio>();
 builder.Services.AddScoped<IUnitofWork, UnitofWork>();
 
 var app = builder.Build();

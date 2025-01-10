@@ -1,0 +1,41 @@
+﻿@model ListadoProductosParaVenderViewModel
+
+
+<h1 class="text-center">Listado de Productos Para Vender</h1>
+
+<table class="table table-bordered" style="margin-top: 12%">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Ingredientes</th>
+            <th>Precio</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var producto in Model.ListadoProductosParaVender)
+        {
+            <tr>
+                <td> <img src="@Url.Content($"~/{producto.ImagePath}")" alt="Logo" width="128" height="128" class="img-square" /></td>
+                <td>@producto.NombreProducto</td>
+                <td>@producto.Descripcion</td>
+                <td>
+                    @foreach(var ing in producto.Ingredientes)
+                    {
+                        <ul>
+                            <li>
+                                @ing.NombreProducto
+                            </li>
+                        </ul>
+                    }
+                </td>
+                <td>@producto.Precio euros</td>
+                <td></td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>

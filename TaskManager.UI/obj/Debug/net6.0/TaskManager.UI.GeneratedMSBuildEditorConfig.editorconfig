@@ -58,6 +58,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50ZVxfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Dashboard/Views/Inicio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXEluaWNpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Dashboard/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Dashboard/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +84,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Inventario/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/Views/Ingrendientes/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxWaWV3c1xJbmdyZW5kaWVudGVzXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/Views/Ingrendientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxWaWV3c1xJbmdyZW5kaWVudGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/Views/ProductosParaVender/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxWaWV3c1xQcm9kdWN0b3NQYXJhVmVuZGVyXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/Views/ProductosParaVender/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxWaWV3c1xQcm9kdWN0b3NQYXJhVmVuZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Suministrador/Views/ComprarProductoSuministrador/Comprar.cshtml]
