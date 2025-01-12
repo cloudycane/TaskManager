@@ -1,20 +1,15 @@
 # Task Manager (Gestión de Tareas) Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
-<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesita un Software as a Service (SaaS) que gestiona todas las tareas diarias y las distintas actividades de negocios (Adquisición, Inventario, Producción, Pedidos, Ventas, Contabilidad, etc.) eficientemente, rápidamente, y económicamente. 
-
-https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
-
-https://github.com/user-attachments/assets/d0b68d97-d880-4645-bb2e-f0a6420e7d0d
-
-
-Este proyecto tiene finalidad de crear una plataforma SaaS (Software as a Service) Gestión de Tareas (Task Manager) para un restaurante de ejemplo llamado "Resto Fibonacci" en el cual las siguientes características son presentes: 
+<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesita un Software as a Service (SaaS) que gestiona todas las tareas diarias y las distintas actividades de negocios (Adquisición, Inventario, Producción, Pedidos, Ventas, Contabilidad, etc.) eficientemente y ágilmente, en el cual las siguientes características están presentes: 
 <ul>
   <li>Gestión de Reservas</li>
   <li>Gestión de Pedidos</li>
   <li>Fidelización</li>
 </ul>
 
+https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
 
+https://github.com/user-attachments/assets/d0b68d97-d880-4645-bb2e-f0a6420e7d0d
 
 <br>
 <img src="./graph1.png" />
