@@ -14,7 +14,7 @@ Este proyecto tiene finalidad de crear una plataforma SaaS (Software as a Servic
   <li>Fidelización</li>
 </ul>
 
-https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
+
 
 <br>
 <img src="./graph1.png" />
@@ -25,6 +25,8 @@ https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 https://github.com/user-attachments/assets/ee8d5023-5024-4bce-841f-c69eeb361de6
 
 ## Módulo 2: Reservación de Cliente
+
+https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 ## Módulo 3: Producción / Producción de los Pedidos 
 ## Módulo 4: Facturación/Pago (Cliente)
 ## Módulo 5: Inventario (Productos Terminados o Consumos)
