@@ -24,13 +24,16 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             _unitOfWork = unitOfWork;
             _context = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
             var compras = await _compraProductoSuministradorFacturacionRepositorio.ObtenerListadoCompraProductoSuministradorAsync();
 
+            var paginatedList = compras.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
             var viewModel = new ListadoComprasProductoSuministradorViewModel()
             {
-                ComprasProductoSuministrador = compras
+                ComprasProductoSuministrador = paginatedList,
+                PaginaActual = pageNumber, 
+                PaginasTotal = (int)Math.Ceiling(compras.Count() / (double)pageSize)
             };
             return View(viewModel);
         }

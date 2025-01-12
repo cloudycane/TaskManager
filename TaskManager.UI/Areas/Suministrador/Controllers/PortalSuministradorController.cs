@@ -117,7 +117,7 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
         public async Task<IActionResult> ObtenerListadoSuministradorExcel()
         {
             MemoryStream memoryStream = await _suministradorRepositorio.ObtenerListadoSuministradorExcel();
-            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "ListadoSuministradores.csv");
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "ListadoSuministradores.xlsx");
         }
     }
 }

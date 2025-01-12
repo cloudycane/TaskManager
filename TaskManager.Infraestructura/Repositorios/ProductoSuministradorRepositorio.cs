@@ -1,6 +1,8 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
+using System.Globalization;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Infraestructura.Data;
@@ -119,7 +121,92 @@ namespace TaskManager.Infraestructura.Repositorios
 
         // CSV 
 
-       
+       public async Task<MemoryStream> ObtenerProductoSuministradorCsv()
+       {
+            MemoryStream memoryStream = new MemoryStream();
+            StreamWriter streamWriter = new StreamWriter(memoryStream);
+            CsvConfiguration csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                Delimiter = ";"
+            };
+            CsvWriter csvWriter = new CsvWriter(streamWriter, csvConfiguration);
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.NombreProducto));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.DescripcionProducto));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.PrecioProducto));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.CantidadProductoEnVenta));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.UnidadProductoEnum));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.CategoriaProductoSuministradorEnum));
+            csvWriter.WriteField(nameof(ProductoSuministradorModel.Suministrador.RazonSocial));
+
+            csvWriter.NextRecord();
+
+            List<ProductoSuministradorModel> productoSuministradores = await _context.ProductosSuministradores.Include(s => s.Suministrador).ToListAsync();
+
+            foreach (ProductoSuministradorModel productoSuministrador in productoSuministradores)
+            {
+                csvWriter.WriteField(productoSuministrador.NombreProducto);
+                csvWriter.WriteField(productoSuministrador.DescripcionProducto);
+                csvWriter.WriteField(productoSuministrador.PrecioProducto);
+                csvWriter.WriteField(productoSuministrador.CantidadProductoEnVenta);
+                csvWriter.WriteField(productoSuministrador.UnidadProductoEnum);
+                csvWriter.WriteField(productoSuministrador.CategoriaProductoSuministradorEnum);
+                csvWriter.WriteField(productoSuministrador.Suministrador.RazonSocial);
+                csvWriter.NextRecord();
+                csvWriter.Flush();
+            }
+
+            memoryStream.Position = 0;
+            return memoryStream;
+
+        }
+
+        // EXCEL 
+
+        public async Task<MemoryStream> ObtenerListadoProductoSuministradorExcel()
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            using (ExcelPackage excelPackage = new ExcelPackage(memoryStream))
+            {
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("LibroProductosSuministradores");
+                worksheet.Cells["A1"].Value = nameof(ProductoSuministradorModel.NombreProducto);
+                worksheet.Cells["B1"].Value = nameof(ProductoSuministradorModel.DescripcionProducto);
+                worksheet.Cells["C1"].Value = nameof(ProductoSuministradorModel.PrecioProducto);
+                worksheet.Cells["D1"].Value = nameof(ProductoSuministradorModel.CantidadProductoEnVenta);
+                worksheet.Cells["E1"].Value = nameof(ProductoSuministradorModel.UnidadProductoEnum);
+                worksheet.Cells["F1"].Value = nameof(ProductoSuministradorModel.CategoriaProductoSuministradorEnum);
+                worksheet.Cells["G1"].Value = nameof(ProductoSuministradorModel.Suministrador.RazonSocial);
+
+
+                using (ExcelRange headerCells = worksheet.Cells["A1:G1"])
+                {
+                    headerCells.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+                    headerCells.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightBlue);
+                    headerCells.Style.Font.Bold = true;
+                }
+
+                int row = 2;
+
+                List<ProductoSuministradorModel> productosSuministradores = await _context.ProductosSuministradores.Include(s => s.Suministrador).ToListAsync();
+
+                foreach (var productoSuministrador in productosSuministradores)
+                {
+                    worksheet.Cells[row, 1].Value = productoSuministrador.NombreProducto;
+                    worksheet.Cells[row, 2].Value = productoSuministrador.DescripcionProducto;
+                    worksheet.Cells[row, 3].Value = productoSuministrador.PrecioProducto;
+                    worksheet.Cells[row, 4].Value = productoSuministrador.CantidadProductoEnVenta;
+                    worksheet.Cells[row, 5].Value = productoSuministrador.UnidadProductoEnum;
+                    worksheet.Cells[row, 6].Value = productoSuministrador.CategoriaProductoSuministradorEnum;
+                    worksheet.Cells[row, 7].Value = productoSuministrador.Suministrador.RazonSocial;
+                    row++;
+                }
+
+                worksheet.Cells[$"A1:G{row}"].AutoFitColumns();
+                await excelPackage.SaveAsync();
+
+            }
+            memoryStream.Position = 0;
+            return memoryStream;
+        }
     }
 
 }

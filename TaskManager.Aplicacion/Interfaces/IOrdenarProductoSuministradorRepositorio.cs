@@ -10,6 +10,8 @@ namespace TaskManager.Aplicacion.Interfaces
     public interface IOrdenarProductoSuministradorRepositorio
     {
         Task<IEnumerable<OrdenAdquisicionModel>> ObtenerListadoOrdenarProductoSuministradorAsync();
+        Task<MemoryStream> ObtenerListadoOrdenesProductosSuministradoresCsv();
+        Task<MemoryStream> ObtenerListadoOrdenesProductosSuministradoresExcel();
         Task<OrdenAdquisicionModel> ObtenerOrdenProductoPorIdAsync(int id);
     }
 }

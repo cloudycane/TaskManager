@@ -129,7 +129,7 @@ namespace TaskManager.Infraestructura.Repositorios
                     worksheet.Cells[row, 4].Value = compra.OrdenAdquisicion.ProductoSuministrador.UnidadProductoEnum;
                     worksheet.Cells[row, 5].Value = compra.OrdenAdquisicion.ProductoSuministrador.CategoriaProductoSuministradorEnum;
                     worksheet.Cells[row, 6].Value = compra.OrdenAdquisicion.ProductoSuministrador.Suministrador.RazonSocial;
-                    worksheet.Cells[row, 7].Value = compra.FechaDeEmision;
+                    worksheet.Cells[row, 7].Value = compra.FechaDeEmision.ToString("f");
 
                     row++;
                 }
@@ -168,7 +168,7 @@ namespace TaskManager.Infraestructura.Repositorios
                 csvWriter.WriteField(compra.OrdenAdquisicion.ProductoSuministrador.UnidadProductoEnum);
                 csvWriter.WriteField(compra.OrdenAdquisicion.ProductoSuministrador.CategoriaProductoSuministradorEnum);
                 csvWriter.WriteField(compra.OrdenAdquisicion.ProductoSuministrador.Suministrador.RazonSocial);
-                csvWriter.WriteField(compra.FechaDeEmision);
+                csvWriter.WriteField(compra.FechaDeEmision.ToString("d"));
                 await csvWriter.NextRecordAsync();
                 await csvWriter.FlushAsync(); 
             }

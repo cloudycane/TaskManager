@@ -21,10 +21,9 @@
 
 <div class="col-lg-12" style="margin-bottom: 4%">
     <a class="btn btn-info" asp-area="Dashboard" asp-controller="Inicio" asp-action="Index">Volver atrás</a>
-    <a class="btn btn-info">Generar PDF</a>
-    <a class="btn btn-info">Generar CSV</a>
-    <a class="btn btn-info">Generar Excel</a>
-    <a class="btn btn-primary">Hacer Pedido</a>
+    <a class="btn btn-info" asp-action="ObtenerOrdenesProductosSuministradoresCSV" asp-controller="ProductoSuministrador">Generar CSV</a>
+    <a class="btn btn-info" asp-action="ObtenerOrdenesProductosSuministradoresExcel" asp-controller="ProductoSuministrador">Generar Excel</a>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="ProductoSuministrador">Hacer Pedido</a>
 
     <nav aria-label="Page navigation" style="float: right;">
         <ul class="pagination">

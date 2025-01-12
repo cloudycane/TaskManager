@@ -187,5 +187,30 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             TempData["SuccessMessage"] = "Orden rechazada exitosamente";
             return RedirectToAction("Ordenes");
         }
+
+        public async Task<IActionResult> ObtenerProductosSuministradoresCSV()
+        {
+            MemoryStream memoryStream = await _productoSuministradorRepositorio.ObtenerProductoSuministradorCsv();
+            return File(memoryStream, "application/octet-stream", "ListadoProductosSuministradores.csv");
+        }
+
+        public async Task<IActionResult> ObtenerListadoProductosSuministradoresExcel()
+        {
+            MemoryStream memoryStream = await _productoSuministradorRepositorio.ObtenerListadoProductoSuministradorExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "LibroListadoProductosSuministradores.xlsx");
+        }
+
+        public async Task<IActionResult> ObtenerOrdenesProductosSuministradoresCSV()
+        {
+            MemoryStream memoryStream = await _ordenarProductoSuministradorRepositorio.ObtenerListadoOrdenesProductosSuministradoresCsv();
+            return File(memoryStream, "application/octet-stream", "ListadoOrdenesProductosSuministradores.csv");
+        }
+
+        public async Task<IActionResult> ObtenerOrdenesProductosSuministradoresExcel()
+        {
+            MemoryStream memoryStream = await _ordenarProductoSuministradorRepositorio.ObtenerListadoOrdenesProductosSuministradoresExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "LibroListadoOrdenesProductosSuministradores.xlsx");
+
+        }
     }
 }

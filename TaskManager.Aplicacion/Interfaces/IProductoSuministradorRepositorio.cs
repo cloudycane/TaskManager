@@ -8,6 +8,8 @@ namespace TaskManager.Aplicacion.Interfaces
         Task<int> CrearProductoSuministradorAsync(ProductoSuministradorModel productoSuministrador);
         Task EliminarProductoSuministradorAsync(int id);
         Task<IEnumerable<ProductoSuministradorModel>> ObtenerListadoProductoSuministradorAsync();
+        Task<MemoryStream> ObtenerListadoProductoSuministradorExcel();
+        Task<MemoryStream> ObtenerProductoSuministradorCsv();
         Task<ProductoSuministradorModel> ObtenerProductoSuministradorPorIdAsync(int id);
         Task OrdenarProducto(int productoId, int productoCantidad, OrdenAdquisicionModel ordenAdquisicion);
     }
