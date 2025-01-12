@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/d0b68d97-d880-4645-bb2e-f0a6420e7d0d
 
 Abajo se puede visualizar las actividades de negocio que interactúan entre sí:
 <ul>
-  
+  <li>El gráfico empieza por el cliente al hacer su pedido online o al hacer su reservación para comer dentro del restaurante.</li>
 </ul>
 <br>
 <img src="./graph1.png" />
