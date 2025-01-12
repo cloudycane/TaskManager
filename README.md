@@ -1,6 +1,6 @@
 # Task Manager (Gestión de Tareas) Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
-<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesita un Software as a Service en la nube (cloud-based SaaS) que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.) eficientemente y ágilmente, en el cual las siguientes características están presentes: 
+<b>Proyecto de conocimiento: </b> Un restaurante (ejemplo práctico) llamado "Resto Fibonacci" necesita un Software as a Service en la nube (cloud-based SaaS) que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.) en el cual las siguientes características están presentes: 
 <ul>
   <li>Gestión de Reservas</li>
   <li>Gestión de Pedidos</li>
