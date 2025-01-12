@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CsvHelper;
+using CsvHelper.Configuration;
+using Microsoft.EntityFrameworkCore;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Infraestructura.Data;
@@ -85,7 +87,7 @@ namespace TaskManager.Infraestructura.Repositorios
                     Id = new int(),
                     ProductoSuministradorId = productoId,
                     Estado = 0,
-                    CantidadDeOrden = productoCantidad,
+                    CantidadDeOrden = productoCantidad *= carritoItem.CantidadDeOrden,
                     FechaDeCreacion = DateTime.Now,
                     HoraDeCreacion = TimeSpan.FromHours(DateTime.Now.Hour),
                     PrecioTotal = productoSuministrador.PrecioProducto * productoCantidad,
@@ -114,6 +116,10 @@ namespace TaskManager.Infraestructura.Repositorios
 
             await _context.SaveChangesAsync();
         }
+
+        // CSV 
+
+       
     }
 
 }

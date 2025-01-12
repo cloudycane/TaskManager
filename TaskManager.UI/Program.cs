@@ -32,6 +32,7 @@ builder.Services.AddScoped<ICompraProductoSuministradorFacturacionRepositorio, C
 builder.Services.AddScoped<IInventarioMateriaPrimaRepositorio, InventarioMateriaPrimaRepositorio>();
 builder.Services.AddScoped<IIngrendientesRepositorio, IngrendientesRepositorio>();
 builder.Services.AddScoped<IProductosParaVenderRepositorio, ProductosParaVenderRepositorio>();
+builder.Services.AddScoped<IPedidosClienteRepositorio, PedidosClienteRepositorio>();
 builder.Services.AddScoped<IUnitofWork, UnitofWork>();
 
 var app = builder.Build();

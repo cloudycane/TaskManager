@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1Ptc37EjgnoLOiLgWVn9wBOYBDwq8ZuCAM+LYqQt9qE=",
+  "Hash": "qP7ZbUg3HZbOi4XKpuPIr7pAKO9cT5/xMRJ86GRfex8=",
   "Source": "TaskManager.UI",
   "BasePath": "_content/TaskManager.UI",
   "Mode": "Default",
@@ -1271,6 +1271,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\104054b3-7fc2-4adb-97f6-edb8a5b28f88_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
+      "SourceId": "TaskManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\",
+      "BasePath": "_content/TaskManager.UI",
+      "RelativePath": "img/imagen_productoVender/104054b3-7fc2-4adb-97f6-edb8a5b28f88_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagen_productoVender\\104054b3-7fc2-4adb-97f6-edb8a5b28f88_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg"
+    },
+    {
       "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg",
       "SourceId": "TaskManager.UI",
       "SourceType": "Discovered",
@@ -1288,6 +1307,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\imagen_productoVender\\996f6ec0-723e-4599-98e5-2b4fc19fd8c4_WhatsApp Image 2024-12-09 at 16.30.36_c8ed88aa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\9cf5e6cb-9170-4ae9-9831-03631fafeee6_minibrger.jpg",
+      "SourceId": "TaskManager.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\",
+      "BasePath": "_content/TaskManager.UI",
+      "RelativePath": "img/imagen_productoVender/9cf5e6cb-9170-4ae9-9831-03631fafeee6_minibrger.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagen_productoVender\\9cf5e6cb-9170-4ae9-9831-03631fafeee6_minibrger.jpg"
     },
     {
       "Identity": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\site.js",

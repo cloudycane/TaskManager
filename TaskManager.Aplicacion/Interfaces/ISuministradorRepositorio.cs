@@ -13,6 +13,8 @@ namespace TaskManager.Aplicacion.Interfaces
         Task CrearSuministradorAsync(SuministradorModel suministrador);
         Task EliminarSuministrador(int id);
         Task<IEnumerable<SuministradorModel>> ObtenerListadoSuministradorAsync();
+        Task<MemoryStream> ObtenerListadoSuministradorCSV();
+        Task<MemoryStream> ObtenerListadoSuministradorExcel();
         Task<SuministradorModel> ObtenerSuministradorPorIdAsync(int id);
     }
 }

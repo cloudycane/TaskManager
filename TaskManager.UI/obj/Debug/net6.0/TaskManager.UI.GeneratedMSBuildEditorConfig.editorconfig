@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50ZVxWaWV3c1xIb21lXFNhbXBsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Cliente/Views/PedidosCliente/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50ZVxWaWV3c1xQZWRpZG9zQ2xpZW50ZVxDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Cliente/Views/Reservacion/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50ZVxWaWV3c1xSZXNlcnZhY2lvblxDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,10 +112,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Produccion/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjY2lvblxfVmlld1N0YXJ0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Suministrador/Views/ComprarProductoSuministrador/Comprar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3VtaW5pc3RyYWRvclxWaWV3c1xDb21wcmFyUHJvZHVjdG9TdW1pbmlzdHJhZG9yXENvbXByYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gesel/source/repos/MantenimientoWeb.Proyecto/TaskManager-Restaurantes/TaskManager.UI/Areas/Suministrador/Views/ComprarProductoSuministrador/Eliminar.cshtml]

@@ -1,0 +1,525 @@
+﻿@model PedidosClienteModel
+
+@{
+    
+    var productosEnVentas = ViewBag.ProductosEnVentas as List<ProductosParaVenderModel>;
+    ViewData["Title"] = "Pedidos";
+}
+
+<h1 class="text-center">Elige su pedido</h1>
+
+<form asp-controller="PedidosCliente" asp-action="Crear" enctype="multipart/form-data" method="post" style="margin-top: 2%">
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.NombreCliente)
+        @Html.TextBoxFor(model => model.NombreCliente, "", new { @class = "form-control", @placeholder = "¿Cómo le gusta que le llamamos?" })
+        @Html.ValidationMessageFor(model => model.NombreCliente, "", new { @class = "text-danger"})
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.TelefonoCliente)
+        @Html.TextBoxFor(model => model.TelefonoCliente, "", new { @class = "form-control", @placeholder = "Índica su número de teléfono." })
+        @Html.ValidationMessageFor(model => model.TelefonoCliente, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.CorreElectronicoCliente)
+        @Html.TextBoxFor(model => model.CorreElectronicoCliente, "", new { @class = "form-control", @placeholder = "Índica su correo electronico." })
+        @Html.ValidationMessageFor(model => model.CorreElectronicoCliente, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.DireccionCliente)
+        @Html.TextBoxFor(model => model.DireccionCliente, "", new { @class = "form-control", @placeholder = "Índica su dirección precisamente." })
+        @Html.ValidationMessageFor(model => model.DireccionCliente, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-lg-4">
+        @Html.LabelFor(model => model.MetodoDePago)
+        @Html.DropDownListFor(model => model.MetodoDePago, Html.GetEnumSelectList<MetodoDePagoEnumCliente>(), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.MetodoDePago, "", new { @class = "text-danger" })
+    </div>
+
+    <hr />
+
+    <div class="col-lg-12">
+       
+        <div class="form-check">
+            <div class="col-lg-12">
+                <h3 class="text-center">Menú Antipasto / Entrantes</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Antipasto).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center> 
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Primi Piatti / Primer Plato</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.PrimiPiatti).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Secondi Piatti / Segundo Plato</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.SecondiPiatti).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Contorni</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Contorni).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Ensaladas</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Ensaladas).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Pizzas</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Pizzas).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Panes</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Panes).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Bebidas</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Bebidas).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Vinos</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Vinos).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+             <div class="col-lg-12">
+                <h3 class="text-center">Vinos</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Vinos).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div> 
+            
+            <div class="col-lg-12">
+                <h3 class="text-center">Cervezas</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Cervezas).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Licores</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Licores).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Cafes</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Cafes).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-lg-12">
+                <h3 class="text-center">Especialidades</h3>
+
+                @foreach (var producto in productosEnVentas.Where(a => a.CategoriaProductoEnVentas == CategoriaProductoEnVentasEnum.Especialidades).ToList())
+                {
+                    <div class="col-lg-4 card" style="border:solid; border-color: lightblue; border-width: 2px ">
+                        <center>
+                            <img src="@Url.Content($"~/{producto.ImagePath ?? "default-image-path.jpg"}")" alt="Producto" width="128" height="128" class="img-square" style="margin: 4%" />
+                        </center>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre: </th>
+                                <td>@producto.NombreProducto</td>
+                            </tr>
+
+                            <tr>
+                                <th>Precio: </th>
+                                <td>@producto.Precio EUROS</td>
+                            </tr>
+
+                            <tr>
+                                <th><input type="number" class="form-control" name="quantities-@producto.Id" placeholder="Cantidad" min="1" /></th>
+                                <td><input type="checkbox" class="form-check-input" name="productosIds" value="@producto.Id" id="checkbox-@producto.Id" /> Selecccionar </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+
+                }
+            </div>
+
+        </div>
+    </div>
+</form>

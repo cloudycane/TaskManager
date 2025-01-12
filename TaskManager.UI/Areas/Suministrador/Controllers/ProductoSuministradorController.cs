@@ -27,13 +27,16 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             _unitOfWork = unitOfWork;
 
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
             var productoSuministrador = await _productoSuministradorRepositorio.ObtenerListadoProductoSuministradorAsync();
 
+            var paginatedList = productoSuministrador.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
             var viewModel = new ListadoProductosSuministradorViewModel
             {
-                Productos = productoSuministrador
+                Productos = paginatedList,
+                PaginaActual = pageNumber,
+                PaginasTotal = (int)Math.Ceiling(productoSuministrador.Count() / (double)pageSize)
             };
             return View(viewModel);
         }
@@ -129,13 +132,17 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Ordenes()
+        public async Task<IActionResult> Ordenes(int pageNumber = 1, int pageSize = 4)
         {
             var ordenes = await _ordenarProductoSuministradorRepositorio.ObtenerListadoOrdenarProductoSuministradorAsync();
-            
+
+            var paginatedList = ordenes.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
             var viewModel = new ListadoOrdenesAdquisicionViewModel
             {
-                OrdenesAdquisicion = ordenes
+                OrdenesAdquisicion = paginatedList,
+                PaginaActual = pageNumber,
+                PaginasTotal = (int)Math.Ceiling(ordenes.Count() / (double)pageSize)
             };
 
             return View(viewModel);

@@ -3,7 +3,17 @@
 
 <h1 class="text-center">Listado de Productos Para Vender</h1>
 
-<table class="table table-bordered" style="margin-top: 12%">
+<div class="col-lg-12" style="margin-bottom: 4%">
+    <a class="btn btn-info" asp-area="Dashboard" asp-action="Index" asp-controller="Inicio">Volver atrás</a>
+    <a class="btn btn-info">Generar PDF</a>
+    <a class="btn btn-info">Generar CSV</a>
+    <a class="btn btn-info">Generar Excel</a>
+    <a class="btn btn-primary" asp-action="Crear" asp-controller="ProductosParaVender" asp-area="Produccion">Crear Producto</a>
+
+
+</div>
+
+<table class="table table-bordered" style="margin-top: 4%">
     <thead>
         <tr>
             <th>Imagen</th>

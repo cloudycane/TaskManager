@@ -19,13 +19,17 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             _suministradorRepositorio = suministradorRepositorio;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
             var suministradores = await _suministradorRepositorio.ObtenerListadoSuministradorAsync();
 
+
+            var paginatedList = suministradores.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
             var viewModel = new ListadoSuministradoresViewModel
             {
-                ListadoSuministradores = suministradores
+                ListadoSuministradores = paginatedList, 
+                PaginaActual = pageNumber, 
+                PaginasTotal = (int)Math.Ceiling(suministradores.Count() / (double)pageSize)
             };
 
             return View(viewModel);
@@ -102,6 +106,18 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             await _suministradorRepositorio.ActualizarSuministrador(suministrador);
             TempData["SuccessMessage"] = "Enhorabuena, ha sido editada exitosamente";
             return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> ObtenerListadoSuministradorCSV()
+        {
+            MemoryStream memoryStream = await _suministradorRepositorio.ObtenerListadoSuministradorCSV();
+            return File(memoryStream, "application/octet-stream", "ListadoSuministradores.csv");
+        }
+
+        public async Task<IActionResult> ObtenerListadoSuministradorExcel()
+        {
+            MemoryStream memoryStream = await _suministradorRepositorio.ObtenerListadoSuministradorExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "ListadoSuministradores.csv");
         }
     }
 }

@@ -90,15 +90,18 @@
             color: white;
             
         }
+
+        i:hover{
+            color: navy;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Swiper -->
 
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
         <div class="parallax-bg" style="
-          background-image: url(https://i.pinimg.com/originals/ff/3b/4b/ff3b4b92078383059d722f93ef07ef4b.gif);
+          background-image: url(https://i.pinimg.com/originals/48/38/3a/48383acbb84f04841ac6ab7e40d33620.gif);
         " data-swiper-parallax="-23%"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -107,70 +110,56 @@
                 <hr />
 
                     <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-person-circle"></i></a></center>
-                        
-                        <p class="text-center">Perfil</p>
-
-                    </div>
-
-                    <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-building"></i></a></center>
+                        <center><a asp-action="Index" asp-controller="PortalSuministrador" asp-area="Suministrador"><i class="bi bi-building"></i></a></center>
 
                         <p class="text-center">Portal Suministrador</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-inboxes"></i></a></center>
+                        <center><a asp-action="Index" asp-controller="ProductoSuministrador" asp-area="Suministrador"><i class="bi bi-inboxes"></i></a></center>
 
                         <p class="text-center">Productos Suministros</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-layout-text-window-reverse"></i></a></center>
+                        <center><a asp-action="Ordenes" asp-controller="ProductoSuministrador" asp-area="Suministrador"><i class="bi bi-layout-text-window-reverse"></i></a></center>
 
                         <p class="text-center">Pedidos (Suministros)</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                    <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-ticket-detailed"></i></a></center>
+                    <center><a asp-action="Index" asp-controller="ComprarProductoSuministrador" asp-area="Suministrador"><i class="bi bi-ticket-detailed"></i></a></center>
 
                         <p class="text-center">Compras (Suministros)</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                    <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-ui-checks-grid"></i></a></center>
+                    <center><a asp-action="Index" asp-controller="InventarioMateriaPrima" asp-area="Inventario"><i class="bi bi-ui-checks-grid"></i></a></center>
 
                     <p class="text-center">Inventario (Materias Primas)</p>
 
                     </div>
 
+                    <div class="col-sm-2">
+                    <center><a asp-action="Index" asp-controller="Reservacion" asp-area="Cliente"><i class="bi bi-calendar2-week"></i></a></center>
+
+                    <p class="text-center">Gestión de Reservas</p>
+
+                    </div>
 
                 <div class="col-sm-12" style="margin-top: 2%">
-                        
-                        <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-calendar2-week"></i></a></center>
 
-                            <p class="text-center">Gestión de Reservas</p>
+                        <div class="col-sm-2">
+                        <center><a asp-action="Index" asp-controller="ProductosParaVender" asp-area="Produccion"><i class="bi bi-bag-heart"></i></a></center>
+
+                        <p class="text-center">Catálogo Productos</p>
 
                         </div>
 
-                        <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-bag-heart"></i></a></center>
-
-                        <p class="text-center">Productos Para Vender</p>
-
-                        </div>
-
-                        <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-file-richtext"></i></a></center>
-
-                            <p class="text-center">Catálogo Productos En Venta</p>
-
-                        </div>
                         <div class="col-sm-2">
                         <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-minecart-loaded"></i></a></center>
 
@@ -187,31 +176,23 @@
 
                         <div class="col-sm-2">
 
-
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-file-earmark-break"></i></a></center>
-
-                            <p class="text-center">Facturas</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="col-sm-2">
-
-
                         <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-person-hearts"></i></a></center>
 
                         <p class="text-center">Gestionar Pedidos Clientes</p>
 
                         </div>
+
                     </div>
+
+                   
           
             </div>
 
             <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-300">Slide 2</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="subtitle"><a asp-area="Cliente" asp-controller="Home" asp-action="Index"><i class="bi bi-x-circle" style="font-size: 40px"></i></a></div>
+                <div class="title text-center" data-swiper-parallax="-300">Contabilidad y Finanzas</div>
+                <hr />
+               
                 <div class="text" data-swiper-parallax="-100">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam

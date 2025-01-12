@@ -1,4 +1,6 @@
-﻿namespace TaskManager.Dominio.Entidades
+﻿using TaskManager.Dominio.Enum;
+
+namespace TaskManager.Dominio.Entidades
 {
     public class ProductosParaVenderModel
     {
@@ -9,6 +11,7 @@
         public List<ProductoSuministradorModel> Ingredientes { get; set; } = new List<ProductoSuministradorModel>();
         public string ImagePath { get; set; }
         public DateTime FechaDeProduccion { get; set; }
+        public CategoriaProductoEnVentasEnum CategoriaProductoEnVentas { get; set; }
 
     }
 }

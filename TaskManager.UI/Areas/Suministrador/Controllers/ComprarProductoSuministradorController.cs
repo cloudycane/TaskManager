@@ -122,5 +122,17 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             return RedirectToAction("Index");  
 
         }
+
+        public async Task<IActionResult> ComprasProductosSuministradoresCSV()
+        {
+            MemoryStream memoryStream = await _compraProductoSuministradorFacturacionRepositorio.ObtenerCompraProductoCsv();
+            return File(memoryStream, "application/octet-stream", "ComprasProductosSuministrador.csv");
+        }
+
+        public async Task<IActionResult> ComprasProductosSuministradoresExcel()
+        {
+            MemoryStream memoryStream = await _compraProductoSuministradorFacturacionRepositorio.ObtenerComprasProductosSuministradoresExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "ComprasProductosSuministrador.csv");
+        }
     }
 }

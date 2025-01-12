@@ -190,6 +190,46 @@ namespace TaskManager.Infraestructura.Migrations
                     b.ToTable("OrdenesAdquisicion");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidosClienteModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CantidadPedido")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CorreElectronicoCliente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DireccionCliente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaDePedido")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MetodoDePago")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreCliente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("PrecioTotal")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductosParaVenderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TelefonoCliente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PedidosClientes");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
                 {
                     b.Property<int>("Id")
@@ -197,6 +237,9 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoriaProductoEnVentas")
+                        .HasColumnType("int");
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");
@@ -210,10 +253,15 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Property<string>("NombreProducto")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("PedidosClienteModelId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Precio")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PedidosClienteModelId");
 
                     b.ToTable("ProductosParaVender");
                 });
@@ -396,6 +444,13 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Navigation("ProductoSuministrador");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.PedidosClienteModel", null)
+                        .WithMany("Pedidos")
+                        .HasForeignKey("PedidosClienteModelId");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>
                 {
                     b.HasOne("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", null)
@@ -430,6 +485,11 @@ namespace TaskManager.Infraestructura.Migrations
             modelBuilder.Entity("TaskManager.Dominio.Entidades.OrdenAdquisicionModel", b =>
                 {
                     b.Navigation("Productos");
+                });
+
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidosClienteModel", b =>
+                {
+                    b.Navigation("Pedidos");
                 });
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
