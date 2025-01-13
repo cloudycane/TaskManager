@@ -11,7 +11,7 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
   <li><b>Adquisición de los requisitos del inventario: </b>los recursos para hacer el pedido de los clientes pueden abastecerse, por eso se notifica los requisitos y las necesidades del inventario, además se hace un "sourcing", es decir, buscar un suministrador y materias primas adecuadamente.</b></li>
   <li><b>Facturación, Contabilidad y Finanza: </b>se hace un seguimiento de los gastos (pago de la adquisición, renta, mantenimiento, etc.) y los ingresos (pago de los clientes, donaciones, etc.) a partir de las facturas emitidas </li>
   <li><b>Ventas y Marketing: </b> Gestión de los productos terminados para vender al público y publicidades para ganar visitas y nuevos clientes.</li>
-  <li><b>Recursos Humanos (RRHH): </b></li>
+  <li><b>Recursos Humanos (RRHH): </b> Gestión de los empleados (sea nuevos integrantes o trabajadores anteriores) y el salario.</li>
 </ul>
 <br>
 <img src="./graph1.png" />
