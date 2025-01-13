@@ -1,15 +1,10 @@
 # Task Manager ERP Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
-<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.) en el cual las siguientes características están presentes: 
-<ul>
-  <li>Gestión de Reservas</li>
-  <li>Gestión de Pedidos</li>
-  <li>Fidelización</li>
-</ul>
+<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.).
 
 https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
 
-Abajo se puede visualizar las actividades de negocio que interactúan entre sí:
+Abajo se puede visualizar las actividades de negocio dentro de la empresa o establecimiento: 
 <ul>
   <li><b>Actividades de los clientes: </b>El gráfico empieza por el cliente al hacer su pedido online o al hacer su reservación para comer dentro del restaurante.</li>
   <li><b>Producción: </b>Tras realizar el pedido, la próxima actividad es la producción. El restaurante recibirá los detalles del pedido y los cocineros cocinan los que apetezcan los clientes.</li>
