@@ -14,7 +14,7 @@ Abajo se puede visualizar las actividades de negocio que interactúan entre sí:
   <li><b>Actividades de los clientes: </b>El gráfico empieza por el cliente al hacer su pedido online o al hacer su reservación para comer dentro del restaurante.</li>
   <li><b>Producción: </b>Tras realizar el pedido, la próxima actividad es la producción. El restaurante recibirá los detalles del pedido y los cocineros cocinan los que apetezan los clientes.</li>
   <li><b>Adquisición de los requisitos del inventario: </b>los recursos para hacer el pedido de los clientes pueden abastecerse, por eso se notifica los requisitos y las necesidades de restaurante, además se hace un "sourcing", es decir, buscar un suministrador y materias primas adecuadas.</b></li>
-  <li><b>Facturación: se hace un seguimiento de los gastos y </b></li>
+  <li><b>Facturación: </b>se hace un seguimiento de los gastos (pago de la adquisición, renta, mantenimiento, etc.) y los ingresos (pago de los clientes, donaciones, etc.) a partir de las facturas emitidas </li>
 </ul>
 <br>
 <img src="./graph1.png" />
