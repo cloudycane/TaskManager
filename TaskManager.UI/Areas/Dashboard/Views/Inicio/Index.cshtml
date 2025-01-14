@@ -5,8 +5,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="~/css/dashboardApp.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
@@ -20,81 +21,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-
-
-
-    <style>
-       
-        html,
-        body {
-            position: relative;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-        }
-
-        .swiper {
-            width: 100%;
-            height: 100vh; /* Full viewport height */
-            background: #000;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .swiper-slide {
-            font-size: 18px;
-            color: #fff;
-            box-sizing: border-box;
-            padding: 40px 60px;
-        }
-
-        .parallax-bg {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 130%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .swiper-slide .title {
-            font-size: 36px;
-            font-weight: 300;
-        }
-
-        .swiper-slide .subtitle {
-            font-size: 21px;
-        }
-
-        .swiper-slide .text {
-            font-size: 14px;
-            max-width: 400px;
-            line-height: 1.3;
-        }
-
-        i{
-            font-size: 85px;
-            color: white;
-        }
-
-       
-        p{
-            color: white;
-            
-        }
-
-        i:hover{
-            color: navy;
-        }
-    </style>
 </head>
 
 <body>
@@ -105,7 +31,9 @@
         " data-swiper-parallax="-23%"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="subtitle"><a asp-area="Cliente" asp-controller="Home" asp-action="Index"><i class="bi bi-x-circle" style="font-size: 40px"></i></a></div>
+                <div class="subtitle">
+                    <a asp-area="Cliente" asp-controller="Home" asp-action="Index"><i class="bi bi-x-circle" style="font-size: 40px"></i></a>
+                </div>
                 <div class="title text-center" data-swiper-parallax="-300">Actividades Diarias</div>
                 <hr />
 
@@ -131,79 +59,69 @@
                     </div>
 
                     <div class="col-sm-2">
-                    <center><a asp-action="Index" asp-controller="ComprarProductoSuministrador" asp-area="Suministrador"><i class="bi bi-ticket-detailed"></i></a></center>
+                        <center><a asp-action="Index" asp-controller="ComprarProductoSuministrador" asp-area="Suministrador"><i class="bi bi-ticket-detailed"></i></a></center>
 
                         <p class="text-center">Compras (Suministros)</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                    <center><a asp-action="Index" asp-controller="InventarioMateriaPrima" asp-area="Inventario"><i class="bi bi-ui-checks-grid"></i></a></center>
+                        <center><a asp-action="Index" asp-controller="InventarioMateriaPrima" asp-area="Inventario"><i class="bi bi-ui-checks-grid"></i></a></center>
 
-                    <p class="text-center">Inventario (Materias Primas)</p>
+                        <p class="text-center">Inventario (Materias Primas)</p>
 
                     </div>
 
                     <div class="col-sm-2">
-                    <center><a asp-action="Index" asp-controller="Reservacion" asp-area="Cliente"><i class="bi bi-calendar2-week"></i></a></center>
+                        <center><a asp-action="Index" asp-controller="Reservacion" asp-area="Cliente"><i class="bi bi-calendar2-week"></i></a></center>
 
-                    <p class="text-center">Gestión de Reservas</p>
+                        <p class="text-center">Gestión de Reservas</p>
 
                     </div>
 
-                <div class="col-sm-12" style="margin-top: 2%">
+                    <div class="col-sm-12" style="margin-top: 2%">
 
                         <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="ProductosParaVender" asp-area="Produccion"><i class="bi bi-bag-heart"></i></a></center>
+                            <center><a asp-action="Index" asp-controller="ProductosParaVender" asp-area="Produccion"><i class="bi bi-bag-heart"></i></a></center>
 
-                        <p class="text-center">Catálogo Productos</p>
+                            <p class="text-center">Catálogo Productos</p>
 
                         </div>
 
                         <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-minecart-loaded"></i></a></center>
+                            <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-minecart-loaded"></i></a></center>
 
-                        <p class="text-center">Producción</p>
+                            <p class="text-center">Producción</p>
 
                         </div>
                         
                         <div class="col-sm-2">
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-box-seam"></i></a></center>
+                            <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-box-seam"></i></a></center>
 
-                        <p class="text-center">Inventario (Productos Terminados)</p>
+                            <p class="text-center">Inventario (Productos Terminados)</p>
 
                         </div>
 
                         <div class="col-sm-2">
 
-                        <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-person-hearts"></i></a></center>
+                            <center><a asp-action="Index" asp-controller="" asp-area=""><i class="bi bi-person-hearts"></i></a></center>
 
-                        <p class="text-center">Gestionar Pedidos Clientes</p>
+                            <p class="text-center">Gestionar Pedidos Clientes</p>
 
                         </div>
 
                     </div>
 
-                   
-          
             </div>
 
             <div class="swiper-slide">
                 <div class="subtitle"><a asp-area="Cliente" asp-controller="Home" asp-action="Index"><i class="bi bi-x-circle" style="font-size: 40px"></i></a></div>
-                <div class="title text-center" data-swiper-parallax="-300">Contabilidad y Finanzas</div>
+                <div class="title text-center" data-swiper-parallax="-300">Overview</div>
                 <hr />
-               
-                <div class="text" data-swiper-parallax="-100">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                        laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                        Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                        Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                        tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-                    </p>
-                </div>
+                
+           
+
+              
             </div>
             <div class="swiper-slide">
                 <div class="title" data-swiper-parallax="-300">Slide 3</div>
@@ -244,6 +162,7 @@
           },
         });
     </script>
+    <script src="~/js/generic.js"></script>
 </body>
 
 

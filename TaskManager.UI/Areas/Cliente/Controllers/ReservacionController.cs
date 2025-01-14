@@ -20,12 +20,16 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             _reservacionService = reservacionService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
             var listadoReservaciones = await _reservacionRepositorio.ObtenerListadoReservacion();
+
+            var paginatedList = listadoReservaciones.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
             var viewModel = new ListadoReservacionesViewModel
             {
-                ListadoReservaciones = listadoReservaciones
+                ListadoReservaciones = paginatedList,
+                PaginaActual = pageNumber,
+                PaginasTotal = (int)Math.Ceiling(listadoReservaciones.Count() / (double)pageSize)
             };
 
             return View(viewModel);

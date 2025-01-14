@@ -19,13 +19,17 @@ namespace TaskManager.UI.Areas.Produccion.Controllers
             _productoSuministradorRepositorio = productoSuministradorRepositorio; 
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
             var listadoProductoParaVender = await _productosParaVenderRepositorio.ObtenerListadoProductosParaVenderAsync();
 
+            var paginatedList = listadoProductoParaVender.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
             var viewModel = new ListadoProductosParaVenderViewModel()
             {
-                ListadoProductosParaVender = listadoProductoParaVender
+                ListadoProductosParaVender = paginatedList, 
+                PaginaActual = pageNumber, 
+                PaginasTotal = (int)Math.Ceiling(listadoProductoParaVender.Count() / (double)pageSize)
             };
             return View(viewModel);
         }
@@ -105,8 +109,20 @@ namespace TaskManager.UI.Areas.Produccion.Controllers
             return View(productosParaVender);
         }
             
-      
+        public async Task<IActionResult> ObtenerProductosParaVenderCSV()
+        {
+            MemoryStream memoryStream = await _productosParaVenderRepositorio.ObtenerProductosParaVenderCsv();
+            return File(memoryStream, "application/octet-stream", "ListadoProductosParaVender.csv");
+        }
+     
+        public async Task<IActionResult> ObtenerProductosParaVenderExcel()
+        {
+            MemoryStream memoryStream = await _productosParaVenderRepositorio.ObtenerListadoProductosParaVenderExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "LibroProductosParaVender.xlsx");
         }
         
+
     }
+        
+}
 

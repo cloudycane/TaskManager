@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
+      "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\css\\dashboardApp.css",
+      "PackagePath": "staticwebassets\\css\\dashboardApp.css"
+    },
+    {
       "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -35,6 +39,18 @@
     {
       "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\imagen_productoVender\\9cf5e6cb-9170-4ae9-9831-03631fafeee6_minibrger.jpg",
       "PackagePath": "staticwebassets\\img\\imagen_productoVender\\9cf5e6cb-9170-4ae9-9831-03631fafeee6_minibrger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\img\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\generic.js",
+      "PackagePath": "staticwebassets\\js\\generic.js"
+    },
+    {
+      "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\graficoinicio.js",
+      "PackagePath": "staticwebassets\\js\\graficoinicio.js"
     },
     {
       "Id": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\wwwroot\\js\\site.js",

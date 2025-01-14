@@ -37,6 +37,13 @@
             
         </div>
         <div id="page-content-wrapper">@RenderBody()</div>
+        <input type="hidden" id="hdfOculto" value="@Url.Content("~")" />
+
+
+        <div id="divLoading" style="display:none;background-image:url(../img/loading.gif);position:absolute;top:0;left:0;
+            width:100%;height:100%;
+             background-repeat:no-repeat;background-position:center;z-index:2000">
+        </div>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -19,6 +19,30 @@
 	<a class="btn btn-primary" asp-action="Crear" asp-controller="Reservacion" asp-area="Cliente">Crear Reservación</a>
 	<a class="btn btn-info" asp-action="ObtenerReservacionesCSV" asp-controller="Reservacion" asp-area="Cliente">Generar CSV</a>
 	<a class="btn btn-info" asp-action="ObtenerReservacionesExcel" asp-controller="Reservacion" asp-area="Cliente">Generar Excel</a> 
+	<nav aria-label="Page navigation" style="float: right;">
+		<ul class="pagination">
+			@if (Model.PaginaActual > 1)
+			{
+				<li class="page-item">
+					<a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual - 1)">Anterior</a>
+				</li>
+			}
+
+			@for (var i = 1; i <= Model.PaginasTotal; i++)
+			{
+				<li class="page-item @(i == Model.PaginaActual ? "active" : "")">
+					<a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+				</li>
+			}
+
+			@if (Model.PaginaActual < Model.PaginasTotal)
+			{
+				<li class="page-item">
+					<a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual + 1)">Siguiente</a>
+				</li>
+			}
+		</ul>
+	</nav>
 </div>
 
 <table class="table table-striped">

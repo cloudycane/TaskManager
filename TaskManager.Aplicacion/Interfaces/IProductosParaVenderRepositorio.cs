@@ -6,6 +6,8 @@ namespace TaskManager.Aplicacion.Interfaces
     {
         Task CrearProductoParaVender(ProductosParaVenderModel productosParaVender);
         Task<IEnumerable<ProductosParaVenderModel>> ObtenerListadoProductosParaVenderAsync();
+        Task<MemoryStream> ObtenerListadoProductosParaVenderExcel();
+        Task<MemoryStream> ObtenerProductosParaVenderCsv();
         // Task<IEnumerable<ProductosParaVenderModel>> ObtenerListadoProductosParaVenderAsync();
     }
 }

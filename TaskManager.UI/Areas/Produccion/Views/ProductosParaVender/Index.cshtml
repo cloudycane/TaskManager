@@ -5,10 +5,33 @@
 
 <div class="col-lg-12" style="margin-bottom: 4%">
     <a class="btn btn-info" asp-area="Dashboard" asp-action="Index" asp-controller="Inicio">Volver atrás</a>
-    <a class="btn btn-info">Generar CSV</a>
-    <a class="btn btn-info">Generar Excel</a>
+    <a class="btn btn-info" asp-controller="ProductosParaVender" asp-action="ObtenerProductosParaVenderCSV">Generar CSV</a>
+    <a class="btn btn-info" asp-controller="ProductosParaVender" asp-action="ObtenerProductosParaVenderExcel">Generar Excel</a>
     <a class="btn btn-primary" asp-action="Crear" asp-controller="ProductosParaVender" asp-area="Produccion">Crear Producto</a>
+    <nav aria-label="Page navigation" style="float: right;">
+        <ul class="pagination">
+            @if (Model.PaginaActual > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual - 1)">Anterior</a>
+                </li>
+            }
 
+            @for (var i = 1; i <= Model.PaginasTotal; i++)
+            {
+                <li class="page-item @(i == Model.PaginaActual ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+                </li>
+            }
+
+            @if (Model.PaginaActual < Model.PaginasTotal)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual + 1)">Siguiente</a>
+                </li>
+            }
+        </ul>
+    </nav>
 
 </div>
 
