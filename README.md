@@ -21,6 +21,8 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
 
 https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
 
+Este módulo ayuda al restaurante en la manera que registra las posibilidades suministradores (sourcing) para la adquisición de los productos necesarios para el inventario.  
+
 ## Módulo 2: Reservación de Cliente
 
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
