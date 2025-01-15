@@ -1,4 +1,4 @@
-# Task Manager ERP Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
+# Task Manager ERP / Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
 <b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) simple y ágil que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.).
 
