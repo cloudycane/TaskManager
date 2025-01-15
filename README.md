@@ -21,11 +21,13 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
 
 https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
 
-Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, crear, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel(xlsx). 
+Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, editar, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel(xlsx). 
 
 ## Módulo 2: Reservación de Cliente
 
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
+
+Es una de las características primordiales del proyecto ya que no solamente ayuda a los clientes a reservar su puesto para el restaurante si no también ayuda a la empresa a gestionar las reservaciones de muchas clientes día a día. Este módulo permite crear, organizar, editar, eliminar, generar archivos CSV y Excel (xlsx) de las reservaciones incluso hacer un recordatorio y una validación del acceso en formato PDF. 
 ## Módulo 3: Producción / Producción de los Pedidos 
 ## Módulo 4: Facturación/Pago (Cliente)
 ## Módulo 5: Inventario (Productos Terminados o Consumos)
