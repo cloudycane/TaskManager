@@ -19,7 +19,7 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
 # Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
 ## Módulo 1: Portal de los Suministradores
 
-https://github.com/user-attachments/assets/ee8d5023-5024-4bce-841f-c69eeb361de6
+https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
 
 ## Módulo 2: Reservación de Cliente
 
