@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
+using TaskManager.Infraestructura.Repositorios;
 using TaskManager.UI.ViewModels;
 
 namespace TaskManager.UI.Areas.Inventario.Controllers
@@ -38,6 +39,18 @@ namespace TaskManager.UI.Areas.Inventario.Controllers
             }
 
             return View(model);
+        }
+
+        public async Task<IActionResult> ObtenerListadoInventarioCSV()
+        {
+            MemoryStream memoryStream = await _inventarioMateriaPrimaRepositorio.ObtenerInventarioMateriaPrimaCSV();
+            return File(memoryStream, "application/octet-stream", "InventarioMateriasPrimas.csv");
+        }
+
+        public async Task<IActionResult> ObtenerListadoInventarioExcel()
+        {
+            MemoryStream memoryStream = await _inventarioMateriaPrimaRepositorio.ObtenerInventarioMateriaPrimaExcel();
+            return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "InventarioMateriasPrimas.xlsx");
         }
 
     }

@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
+          "System.Drawing.Common": "9.0.0",
           "TaskManager.Aplicacion": "1.0.0",
           "TaskManager.Dominio": "1.0.0"
         },
@@ -67,7 +68,7 @@
       "EPPlus.System.Drawing/7.5.0": {
         "dependencies": {
           "EPPlus.Interfaces": "7.5.0",
-          "System.Drawing.Common": "8.0.4"
+          "System.Drawing.Common": "9.0.0"
         },
         "runtime": {
           "lib/net6.0/EPPlus.System.Drawing.dll": {
@@ -179,7 +180,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
           "Microsoft.IdentityModel.JsonWebTokens": "6.36.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.36.0",
-          "System.Drawing.Common": "8.0.4"
+          "System.Drawing.Common": "9.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -454,22 +455,6 @@
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
-      "Microsoft.Win32.SystemEvents/8.0.0": {
-        "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        }
-      },
       "System.Collections.Immutable/6.0.1": {
         "runtime": {
           "lib/net6.0/System.Collections.Immutable.dll": {
@@ -499,14 +484,11 @@
           }
         }
       },
-      "System.Drawing.Common/8.0.4": {
-        "dependencies": {
-          "Microsoft.Win32.SystemEvents": "8.0.0"
-        },
+      "System.Drawing.Common/9.0.0": {
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.424.16911"
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52901"
           }
         }
       },
@@ -657,7 +639,7 @@
       },
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
-          "System.Drawing.Common": "8.0.4"
+          "System.Drawing.Common": "9.0.0"
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
@@ -968,13 +950,6 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
-      "path": "microsoft.win32.systemevents/8.0.0",
-      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
-    },
     "System.Collections.Immutable/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1003,12 +978,12 @@
       "path": "system.diagnostics.diagnosticsource/6.0.2",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.2.nupkg.sha512"
     },
-    "System.Drawing.Common/8.0.4": {
+    "System.Drawing.Common/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3G4xpa8mUYGzEF0HlswlBArAFywHJIzsZoB5hU4yMlnYHaabj/lg019BwbyyYBxj0aoM7Cz+jdlgUemeno9LOQ==",
-      "path": "system.drawing.common/8.0.4",
-      "hashPath": "system.drawing.common.8.0.4.nupkg.sha512"
+      "sha512": "sha512-uoozjI3+dlgKh2onFJcz8aNLh6TRCPlLSh8Dbuljc8CdvqXrxHOVysJlrHvlsOCqceqGBR1wrMPxlnzzhynktw==",
+      "path": "system.drawing.common/9.0.0",
+      "hashPath": "system.drawing.common.9.0.0.nupkg.sha512"
     },
     "System.Formats.Asn1/8.0.1": {
       "type": "package",

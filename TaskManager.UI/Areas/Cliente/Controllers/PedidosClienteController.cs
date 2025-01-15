@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
-using TaskManager.Dominio.Enum;
 using TaskManager.Infraestructura.Data;
-using TaskManager.Infraestructura.Repositorios;
 
 namespace TaskManager.UI.Areas.Cliente.Controllers
 {

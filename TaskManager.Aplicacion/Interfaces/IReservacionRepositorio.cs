@@ -16,6 +16,8 @@ namespace TaskManager.Aplicacion.Interfaces
         Task<MemoryStream> ObtenerReservacionCSV();
         Task<MemoryStream> ObtenerReservacionExcel();
         Task<ReservacionModel> ObtenerReservacionPorFecha(DateTime fecha);
-		Task<ReservacionModel> ObtenerReservacionPorId(int id);
+
+        //Task<ReservacionModel> ObtenerReservacionPorFecha(DateTime fecha);
+        Task<ReservacionModel> ObtenerReservacionPorId(int id);
     }
 }

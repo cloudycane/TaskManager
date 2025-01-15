@@ -21,6 +21,10 @@ namespace TaskManager.Infraestructura.Repositorios
 
         public async Task CrearPedidosCliente(PedidosClienteModel model)
         {
+            model = new PedidosClienteModel()
+            {
+                FechaDePedido = DateTime.Now
+            };
             await _context.PedidosClientes.AddAsync(model);
             await _context.SaveChangesAsync();
         }

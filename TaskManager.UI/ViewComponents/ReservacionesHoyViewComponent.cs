@@ -3,11 +3,11 @@ using TaskManager.Aplicacion.Interfaces;
 
 namespace TaskManager.UI.ViewComponents
 {
-    public class SampleViewComponent : ViewComponent
+    public class ReservacionesHoyViewComponent : ViewComponent
     {
         private readonly IReservacionRepositorio _reservacionRepositorio;
 
-        public SampleViewComponent(IReservacionRepositorio reservacionRepositorio)
+        public ReservacionesHoyViewComponent(IReservacionRepositorio reservacionRepositorio)
 		{
 			_reservacionRepositorio = reservacionRepositorio;
 		}
