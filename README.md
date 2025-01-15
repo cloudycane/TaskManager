@@ -21,7 +21,7 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
 
 https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
 
-Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. 
+Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, crear, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel(xlsx). 
 
 ## Módulo 2: Reservación de Cliente
 
