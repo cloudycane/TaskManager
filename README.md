@@ -1,6 +1,6 @@
-# Task Manager ERP Para Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
+# Task Manager ERP / Plataforma de Gestión de Reservas, Pedidos y Fidelización para Restaurantes
 
-<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.).
+<b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) simple y ágil que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.).
 
 https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
 
@@ -19,11 +19,15 @@ Abajo se puede visualizar las actividades de negocio dentro de la empresa o esta
 # Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
 ## Módulo 1: Portal de los Suministradores
 
-https://github.com/user-attachments/assets/ee8d5023-5024-4bce-841f-c69eeb361de6
+https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
+
+Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, editar, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel (xlsx). 
 
 ## Módulo 2: Reservación de Cliente
 
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
+
+Es una de las características primordiales del proyecto ya que no solamente ayuda a los clientes a reservar su puesto para el restaurante si no también ayuda a la empresa a gestionar las reservaciones de muchas clientes día a día. Este módulo permite crear, organizar, editar, eliminar, generar archivos CSV y Excel (xlsx) de las reservaciones incluso hacer un recordatorio y una validación del acceso en formato PDF. 
 ## Módulo 3: Producción / Producción de los Pedidos 
 ## Módulo 4: Facturación/Pago (Cliente)
 ## Módulo 5: Inventario (Productos Terminados o Consumos)
