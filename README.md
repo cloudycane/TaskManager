@@ -29,6 +29,8 @@ https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 
 Es una de las características primordiales del proyecto ya que no solamente ayuda a los clientes a reservar su puesto para el restaurante si no también ayuda a la empresa a gestionar las reservaciones de muchas clientes día a día. Este módulo permite crear, organizar, editar, eliminar, generar archivos CSV y Excel (xlsx) de las reservaciones incluso hacer un recordatorio y una validación del acceso en formato PDF. 
 ## Módulo 3: Producción / Producción de los Pedidos 
+
+Una vez que los clientes han realizado sus pedidos (en línea o dentro del restaurante), la aplicación notificará y mostrará los detalles de sus pedidos a los empleados y iniciará el proceso de la producción. En esta fase se está teniendo en cuenta las cantidades de los productos en el inventario. Cada vez que se produce algo, se reduce la cantidad de cada uno de los productos utilizados para hacer los pedidos del cliente.  
 ## Módulo 4: Facturación/Pago (Cliente)
 ## Módulo 5: Inventario (Productos Terminados o Consumos)
 ## Módulo 6: Suministros
