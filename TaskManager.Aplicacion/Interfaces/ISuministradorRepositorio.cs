@@ -12,7 +12,9 @@ namespace TaskManager.Aplicacion.Interfaces
         Task ActualizarSuministrador(SuministradorModel suministrador);
         Task CrearSuministradorAsync(SuministradorModel suministrador);
         Task EliminarSuministrador(int id);
-        Task<IEnumerable<SuministradorModel>> ObtenerListadoSuministradorAsync();
+        Task<List<SuministradorModel>> ObtenerListadoSuministradorAsync();
+
+        //Task<IEnumerable<SuministradorModel>> ObtenerListadoSuministradorAsync();
         Task<MemoryStream> ObtenerListadoSuministradorCSV();
         Task<MemoryStream> ObtenerListadoSuministradorExcel();
         Task<SuministradorModel> ObtenerSuministradorPorIdAsync(int id);

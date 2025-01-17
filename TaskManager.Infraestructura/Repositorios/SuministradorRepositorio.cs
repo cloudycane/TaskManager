@@ -20,7 +20,7 @@ namespace TaskManager.Infraestructura.Repositorios
 
         #region OBTENER LISTADO DE SUMINISTRADORES 
 
-        public async Task<IEnumerable<SuministradorModel>> ObtenerListadoSuministradorAsync()
+        public async Task<List<SuministradorModel>> ObtenerListadoSuministradorAsync()
         {
             return await _context.Suministradores.ToListAsync();
         }

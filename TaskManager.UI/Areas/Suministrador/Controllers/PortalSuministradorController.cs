@@ -10,10 +10,11 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
     [Area("Suministrador")]
     public class PortalSuministradorController : Controller
     {
-        private readonly SuministradorService _suministradorService;
+        private readonly ISuministradorService _suministradorService;
         private readonly ISuministradorRepositorio _suministradorRepositorio;
+     
 
-        public PortalSuministradorController(SuministradorService suministradorService, ISuministradorRepositorio suministradorRepositorio)
+        public PortalSuministradorController(ISuministradorService suministradorService, ISuministradorRepositorio suministradorRepositorio)
         {
             _suministradorService = suministradorService;
             _suministradorRepositorio = suministradorRepositorio;
@@ -21,7 +22,7 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
 
         public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
-            var suministradores = await _suministradorRepositorio.ObtenerListadoSuministradorAsync();
+            var suministradores = await _suministradorService.ObtenerListadoDeLosSuministradoresAsync();
 
 
             var paginatedList = suministradores.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
@@ -34,6 +35,7 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
 
             return View(viewModel);
         }
+
         [HttpGet]
         public IActionResult Crear()
         {

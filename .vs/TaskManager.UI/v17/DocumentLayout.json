@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\pedidosclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\pedidosclienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8909F2D8-14A8-43AF-879A-4A04BC1C2F4D}|TaskManager.Tests\\TaskManager.Tests.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.tests\\suministradorservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8909F2D8-14A8-43AF-879A-4A04BC1C2F4D}|TaskManager.Tests\\TaskManager.Tests.csproj|solutionrelative:taskmanager.tests\\suministradorservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.ui\\areas\\cliente\\controllers\\reservacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{010FE90D-2BF4-48E5-AED9-CE3A706915BC}|TaskManager.UI\\TaskManager.UI.csproj|solutionrelative:taskmanager.ui\\areas\\cliente\\controllers\\reservacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.aplicacion\\servicios\\suministradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C66084-5CB7-419F-9DF7-38BA2D8E41AD}|TaskManager.Aplicacion\\TaskManager.Aplicacion.csproj|solutionrelative:taskmanager.aplicacion\\servicios\\suministradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\repositorios\\compraproductosuministradorfacturacionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|c:\\users\\gesel\\source\\repos\\mantenimientoweb.proyecto\\taskmanager-restaurantes\\taskmanager.infraestructura\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{070811D4-3242-41B7-A34A-548DBCDD0F80}|TaskManager.Infraestructura\\TaskManager.Infraestructura.csproj|solutionrelative:taskmanager.infraestructura\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,70 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PedidosClienteRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\PedidosClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\PedidosClienteRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\PedidosClienteRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\PedidosClienteRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T02:59:21.699Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReservacionController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "RelativeDocumentMoniker": "TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "RelativeToolTip": "TaskManager.UI\\Areas\\Cliente\\Controllers\\ReservacionController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCcAAAACAAAAAAAAAA==",
+              "Title": "SuministradorService.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Servicios\\SuministradorService.cs",
+              "RelativeDocumentMoniker": "TaskManager.Aplicacion\\Servicios\\SuministradorService.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Aplicacion\\Servicios\\SuministradorService.cs",
+              "RelativeToolTip": "TaskManager.Aplicacion\\Servicios\\SuministradorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T02:16:38.885Z",
+              "WhenOpened": "2025-01-17T02:03:46.539Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "8f939031-849c-4bf5-81c8-19bf286aa179",
-        "Display": 0,
-        "X": 483,
-        "Y": 105,
-        "Width": 800,
-        "Height": 600,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CompraProductoSuministradorFacturacionRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "RelativeToolTip": "TaskManager.Infraestructura\\Repositorios\\CompraProductoSuministradorFacturacionRepositorio.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDMAAAANAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TaskManager.Infraestructura\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Infraestructura\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TaskManager.Infraestructura\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T02:58:54.102Z",
+              "WhenOpened": "2025-01-17T01:55:00.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SuministradorServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Tests\\SuministradorServiceTest.cs",
+              "RelativeDocumentMoniker": "TaskManager.Tests\\SuministradorServiceTest.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\MantenimientoWeb.Proyecto\\TaskManager-Restaurantes\\TaskManager.Tests\\SuministradorServiceTest.cs",
+              "RelativeToolTip": "TaskManager.Tests\\SuministradorServiceTest.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T01:50:15.431Z",
               "EditorCaption": ""
             }
           ]

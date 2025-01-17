@@ -20,7 +20,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Dependency Injection 
 
 builder.Services.AddScoped<ReservacionService>();
-builder.Services.AddScoped<SuministradorService>();
+builder.Services.AddScoped<ISuministradorService, SuministradorService>();
 builder.Services.AddScoped<ProductoSuministradorService>();
 builder.Services.AddScoped<ComprarProductoSuministradorService>();
 
