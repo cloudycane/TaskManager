@@ -25,6 +25,8 @@ Este módulo ayuda al restaurante en la manera que registra los posibles suminis
 
 ## Módulo 2: Productos de los Suministradores 
 
+En esta área podemos ver el catálogo o el listado de los productos en venta de los suministradores registrados en nuestra aplicación. Tiene funciones como la de crear, organizar, editar, eliminar, y ordenar los productos incluso generar archivos CSV y Excel (xlsx).  
+
 ## Módulo 3: Ordénes de los Productos de los Suministradores 
 
 ## Módulo 4: Compra / Adquisición de las Materias Primas 
