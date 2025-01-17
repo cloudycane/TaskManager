@@ -23,24 +23,27 @@ https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
 
 Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, editar, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel (xlsx). 
 
-## Módulo 2: Reservación de Cliente
+## Módulo 2: Productos de los Suministradores 
+
+## Módulo 3: Ordénes de los Productos de los Suministradores 
+
+## Módulo 4: Compra / Adquisición de las Materias Primas 
+
+## Módulo 5: Inventario de Materias Primas 
+## Módulo 6: Reservación de Cliente
 
 https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
 
 Es una de las características primordiales del proyecto ya que no solamente ayuda a los clientes a reservar su puesto para el restaurante si no también ayuda a la empresa a gestionar las reservaciones de muchas clientes día a día. Este módulo permite crear, organizar, editar, eliminar, generar archivos CSV y Excel (xlsx) de las reservaciones incluso hacer un recordatorio y una validación del acceso en formato PDF. 
-## Módulo 3: Producción / Producción de los Pedidos 
+
+## Módulo 7: Gestión de los Pedidos de los Clientes 
+## Módulo 8: Producción / Producción de los Pedidos 
 
 Una vez que los clientes han realizado sus pedidos (en línea o dentro del restaurante), la aplicación notificará y mostrará los detalles de sus pedidos a los empleados y iniciará el proceso de la producción. En esta fase se está teniendo en cuenta las cantidades de los productos en el inventario. Cada vez que se produce algo, se reduce la cantidad de cada uno de los productos utilizados para hacer los pedidos del cliente.  
-## Módulo 4: Facturación/Pago (Cliente)
-## Módulo 5: Inventario (Productos Terminados o Consumos)
-## Módulo 6: Suministros
-## Módulo 7: Inventario (Materias Primas o Insumos) 
-## Módulo 8: Pedidos / Gestión de Pedidos de Clientes 
-## Módulo 9: Adquisición
-## Módulo 10: Facturación/Pago (Empresa) 
-## Módulo 11: Ventas 
-## Módulo 12: Contabilidad y Finanzas
-## Módulo 13: Marketing 
-## Módulo 14: Recursos Humanos
-## Módulo 15: Distribución
+## Módulo 9: Facturación/Pago (Cliente)
 
+En este proceso el cliente realiza el pago para la comida o los productos que ha pedido. 
+## Módulo 10: Inventario (Productos Terminados o Consumos)
+## Módulo 11: Pedidos / Gestión de Pedidos de Clientes 
+## Módulo 12: Ventas 
+## Módulo 13: Contabilidad y Finanzas
