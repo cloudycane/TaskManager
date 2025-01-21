@@ -34,4 +34,45 @@ public class SuministradorService : ISuministradorService
         return listadoSuministradores;
     }
     #endregion
+
+    #region Método de servicio para obtener un suministrador por su Id 
+    
+    public async Task<SuministradorModel> ObtenerUnSuministradorPorIdAsync(int id)
+    {
+        var suministrador = await _suministradorRepositorio.ObtenerSuministradorPorIdAsync(id);
+        return suministrador;
+    }
+
+    #endregion
+
+    #region CREAR
+
+    public async Task<SuministradorModel> CrearSuministradorAsync(SuministradorModel suministrador)
+    {
+       await _suministradorRepositorio.CrearSuministradorAsync(suministrador);
+       var suministradorId = suministrador.Id;
+       var suministradorCreado = await ObtenerUnSuministradorPorIdAsync(suministradorId);
+       return suministradorCreado;
+       
+    }
+
+    #endregion
+
+    #region ELIMINAR 
+
+    public async Task<bool> EliminarSuministradorModel(int id)
+    {
+        var suministrador = await ObtenerUnSuministradorPorIdAsync(id);
+
+        if (suministrador == null)
+        {
+            return false;
+        }
+
+        await _suministradorRepositorio.EliminarSuministrador(id);
+        return true;
+    }
+
+
+    #endregion
 }

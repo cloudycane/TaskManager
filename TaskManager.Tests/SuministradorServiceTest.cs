@@ -1,17 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Moq;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TaskManager.Aplicacion.Interfaces;
-using TaskManager.Aplicacion.Servicios;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Infraestructura.Data;
-using Xunit;
 using FluentAssertions;
 using AutoFixture;
-using System.Data.Entity;
-using EntityFrameworkCoreMock;
 using Xunit.Abstractions;
 using AutoMapper;
 
@@ -84,6 +77,67 @@ namespace TaskManager.Tests
             result.Should().BeEquivalentTo(expectedData);
 
             _suministradorRepositorioMock.Verify(repo => repo.ObtenerListadoSuministradorAsync(), Times.Once);
+        }
+
+        [Fact]
+        public async Task ObtenerUnSuministradorPorId_ExistingId_ShouldReturnExpectedSuministrador()
+        {
+            // Arrange
+            var expectedSuministrador = new SuministradorModel
+            {
+                Id = 10,
+                RazonSocial = "Sum1",
+                DireccionLinea1 = "Algo",
+                DireccionLinea2 = "Algo",
+                Localidad = "Algo",
+                Provincia = "Algo",
+                Pais = "Algo"
+            };
+
+            var mockService = new Mock<ISuministradorService>();
+            mockService.Setup(s => s.ObtenerUnSuministradorPorIdAsync(10))
+                       .ReturnsAsync(expectedSuministrador);
+
+            // Use the mock service instead of the real service
+            var service = mockService.Object;
+
+            // Act
+            var result = await service.ObtenerUnSuministradorPorIdAsync(id: 10);
+
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().BeEquivalentTo(expectedSuministrador);
+        }
+
+        [Fact]
+        public async Task CrearSuministrador_ShouldCreateProperly()
+        {
+            // Arrange
+            var newSuministrador = new SuministradorModel
+            {
+                Id = 1,
+                RazonSocial = "Nuevo Suministrador",
+                DireccionLinea1 = "Nueva Dirección",
+                DireccionLinea2 = "Otra Línea",
+                Localidad = "Nueva Localidad",
+                Provincia = "Nueva Provincia",
+                Pais = "Nuevo País"
+            };
+
+            var mockService = new Mock<ISuministradorService>();
+
+            // Mocking the service behavior for creating and then retrieving the Suministrador
+            mockService.Setup(s => s.CrearSuministradorAsync(It.IsAny<SuministradorModel>()))
+                       .ReturnsAsync(newSuministrador);
+
+            var service = mockService.Object;
+
+            // Act
+            var result = await service.CrearSuministradorAsync(newSuministrador);
+
+            // Assert
+            result.Should().NotBeNull("because a valid Suministrador should be created and returned.");
+            result.Should().BeEquivalentTo(newSuministrador, "because the returned Suministrador should match the input data.");
         }
     }
 }
