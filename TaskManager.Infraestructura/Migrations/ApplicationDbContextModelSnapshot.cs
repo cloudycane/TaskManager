@@ -190,6 +190,27 @@ namespace TaskManager.Infraestructura.Migrations
                     b.ToTable("OrdenesAdquisicion");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidoProductoModel", b =>
+                {
+                    b.Property<int>("PedidoClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductoParaVenderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CantidadDePedido")
+                        .HasColumnType("int");
+
+                    b.Property<double>("PrecioTotal")
+                        .HasColumnType("float");
+
+                    b.HasKey("PedidoClienteId", "ProductoParaVenderId");
+
+                    b.HasIndex("ProductoParaVenderId");
+
+                    b.ToTable("PedidoProducto");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidosClienteModel", b =>
                 {
                     b.Property<int>("Id")
@@ -198,14 +219,16 @@ namespace TaskManager.Infraestructura.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("CantidadPedido")
-                        .HasColumnType("int");
-
                     b.Property<string>("CorreElectronicoCliente")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DireccionCliente")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EstadoPedido")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("FechaDePedido")
                         .HasColumnType("datetime2");
@@ -214,15 +237,14 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NombreCliente")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("PrecioTotal")
                         .HasColumnType("float");
 
-                    b.Property<int>("ProductosParaVenderId")
-                        .HasColumnType("int");
-
                     b.Property<string>("TelefonoCliente")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -237,6 +259,9 @@ namespace TaskManager.Infraestructura.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CantidadPedido")
+                        .HasColumnType("int");
 
                     b.Property<int>("CategoriaProductoEnVentas")
                         .HasColumnType("int");
@@ -444,6 +469,25 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Navigation("ProductoSuministrador");
                 });
 
+            modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidoProductoModel", b =>
+                {
+                    b.HasOne("TaskManager.Dominio.Entidades.PedidosClienteModel", "PedidoCliente")
+                        .WithMany("PedidoProductos")
+                        .HasForeignKey("PedidoClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TaskManager.Dominio.Entidades.ProductosParaVenderModel", "ProductoParaVender")
+                        .WithMany("PedidoProductos")
+                        .HasForeignKey("ProductoParaVenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PedidoCliente");
+
+                    b.Navigation("ProductoParaVender");
+                });
+
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
                 {
                     b.HasOne("TaskManager.Dominio.Entidades.PedidosClienteModel", null)
@@ -489,12 +533,16 @@ namespace TaskManager.Infraestructura.Migrations
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.PedidosClienteModel", b =>
                 {
+                    b.Navigation("PedidoProductos");
+
                     b.Navigation("Pedidos");
                 });
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
                 {
                     b.Navigation("Ingredientes");
+
+                    b.Navigation("PedidoProductos");
                 });
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductoSuministradorModel", b =>

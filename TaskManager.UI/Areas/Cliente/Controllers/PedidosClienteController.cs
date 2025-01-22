@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
+using TaskManager.Dominio.Entidades.DTOs;
 using TaskManager.Infraestructura.Data;
+using TaskManager.UI.ViewModels;
 
 namespace TaskManager.UI.Areas.Cliente.Controllers
 {
@@ -19,33 +22,76 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Crear()
+        // GET: PedidosClientes/Index
+        public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 4)
         {
-            var productosEnVentas = await _productosParaVenderRepositorio.ObtenerListadoProductosParaVenderAsync();
-            ViewBag.ProductosEnVentas = productosEnVentas;
-            return View(new PedidosClienteModel());
+            var pedidos = await _context.PedidosClientes
+                .Include(p => p.PedidoProductos)
+                    .ThenInclude(pp => pp.ProductoParaVender)
+                .ToListAsync();
+
+            var paginatedList = pedidos.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+            var viewModel = new ListadoPedidosClientesViewModel
+            {
+                PedidosClientes = paginatedList,
+                PaginaActual = pageNumber,
+                PaginasTotal = (int)Math.Ceiling(pedidos.Count() / (double)pageSize)
+            };
+
+            return View(viewModel);
         }
 
+        public async Task<IActionResult> Crear()
+        {
+      
+            var productosParaVender = await _context.ProductosParaVender.ToListAsync();
+
+            var viewModel = new PedidosClienteDTO
+            {
+                ProductosParaVender = productosParaVender
+            };
+
+            return View(viewModel);
+        }
+
+        // Handle form submission
         [HttpPost]
-        public async Task<IActionResult> Crear(PedidosClienteModel model, int[] productosIds)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Crear(PedidosClienteDTO viewModel)
         {
             if (ModelState.IsValid)
             {
-                foreach (var productoId in productosIds)
+                var pedidoProductos = viewModel.SelectedProductosParaVenderIds
+                                                .Zip(viewModel.CantidadesDeProductosParaVenderIds, (productoId, cantidad) => new PedidoProductoModel
+                                                {
+                                                ProductoParaVenderId = productoId,
+                                                CantidadDePedido = cantidad
+                                                }).ToList();
+
+
+                var nuevoPedido = new PedidosClienteModel
                 {
-                    var producto = await _context.ProductosParaVender.FindAsync(productoId);
-                    if (producto != null)
-                    {
-                        model.Pedidos.Add(producto);
-                    }
-                }
-                await _clienteRepositorio.CrearPedidosCliente(model);
-                return RedirectToAction("Index");
+                    NombreCliente = viewModel.NombreCliente,
+                    DireccionCliente = viewModel.DireccionCliente,
+                    TelefonoCliente = viewModel.TelefonoCliente,
+                    CorreElectronicoCliente = viewModel.CorreElectronicoCliente,
+                    MetodoDePago = viewModel.MetodoDePago,
+                    FechaDePedido = DateTime.Now,
+                    PedidoProductos = pedidoProductos,
+                    
+
+
+                };
+
+                _context.PedidosClientes.Add(nuevoPedido);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-            var productosEnVentas = await _productosParaVenderRepositorio.ObtenerListadoProductosParaVenderAsync();
-            ViewBag.ProductosEnVentas = productosEnVentas;
-       
-            return View(model);
+
+            viewModel.ProductosParaVender = await _context.ProductosParaVender.ToListAsync();
+            return View(viewModel);
         }
+
+
     }
 }

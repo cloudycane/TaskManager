@@ -34,14 +34,13 @@
         @foreach (var producto in productosSuministradores)
         {
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="ingredientesIds" value="@producto.Id" id="checkbox-@producto.Id" />
+                <input type="checkbox" class="form-check-input" name="ingredientesIds[]" value="@producto.Id" id="checkbox-@producto.Id" />
                 <label class="form-check-label" for="checkbox-@producto.Id">
                     @producto.NombreProducto
                 </label>
             </div>
         }
     </div>
-
 
     <div class="col-lg-4">
         @Html.LabelFor(model => model.Precio)

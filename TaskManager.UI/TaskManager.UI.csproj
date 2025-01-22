@@ -30,7 +30,6 @@
     <Folder Include="Areas\Inventario\Views\InventarioProductos\" />
     <Folder Include="Areas\Marketing\" />
     <Folder Include="Areas\Ventas\" />
-    <Folder Include="Areas\RRHH\" />
   </ItemGroup>
 
 </Project>

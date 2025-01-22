@@ -35,6 +35,7 @@ C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Infraestructu
 C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Infraestructura\obj\Debug\net6.0\TaskManager.Infraestructura.pdb
 C:\Users\gesel\source\repos\TaskManager.UI\TaskManager\TaskManager.Infraestructura\obj\Debug\net6.0\ref\TaskManager.Infraestructura.dll
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\bin\Debug\net6.0\TaskManager.Infraestructura.deps.json
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\bin\Debug\net6.0\TaskManager.Infraestructura.runtimeconfig.json
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\bin\Debug\net6.0\TaskManager.Infraestructura.dll
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\bin\Debug\net6.0\TaskManager.Infraestructura.pdb
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\bin\Debug\net6.0\TaskManager.Aplicacion.dll
@@ -51,4 +52,5 @@ C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\T
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\obj\Debug\net6.0\TaskManager.Infraestructura.dll
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\obj\Debug\net6.0\refint\TaskManager.Infraestructura.dll
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\obj\Debug\net6.0\TaskManager.Infraestructura.pdb
+C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\obj\Debug\net6.0\TaskManager.Infraestructura.genruntimeconfig.cache
 C:\Users\gesel\source\repos\MantenimientoWeb.Proyecto\TaskManager-Restaurantes\TaskManager.Infraestructura\obj\Debug\net6.0\ref\TaskManager.Infraestructura.dll

@@ -18,8 +18,6 @@ namespace TaskManager.Infraestructura.Repositorios
         }
 
         // OBTENER LISTADO PRODUCTOS PARA VENDER 
-
-      
          
         public async Task<IEnumerable<ProductosParaVenderModel>> ObtenerListadoProductosParaVenderAsync()
         {

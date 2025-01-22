@@ -1,0 +1,113 @@
+﻿@model ListadoPedidosClientesViewModel
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        Swal.fire({
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    </script>
+}
+
+<div class="col-lg-12" style="margin-bottom: 2%">
+    <a class="btn btn-primary" asp-action="Crear" asp-controller="PedidosCliente" asp-area="Cliente">Crear Pedido</a>
+    <a class="btn btn-info" asp-action="ObtenerReservacionesCSV" asp-controller="" asp-area="Cliente">Generar CSV</a>
+    <a class="btn btn-info" asp-action="ObtenerReservacionesExcel" asp-controller="" asp-area="Cliente">Generar Excel</a>
+    <nav aria-label="Page navigation" style="float: right;">
+        <ul class="pagination">
+            @if (Model.PaginaActual > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual - 1)">Anterior</a>
+                </li>
+            }
+
+            @for (var i = 1; i <= Model.PaginasTotal; i++)
+            {
+                <li class="page-item @(i == Model.PaginaActual ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+                </li>
+            }
+
+            @if (Model.PaginaActual < Model.PaginasTotal)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PaginaActual + 1)">Siguiente</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+<h2>Lista de Pedidos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre Cliente</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Correo Electrónico</th>
+            <th>Método De Pago</th>
+            <th>Productos</th>
+            <th>Precio Total</th>
+            <th>Fecha de Pedido</th>
+            <th>Estado de Pedido</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pedido in Model.PedidosClientes)
+        {
+            <tr>
+                <td>@pedido.NombreCliente</td>
+                <td>@pedido.DireccionCliente</td>
+                <td>@pedido.TelefonoCliente</td>
+                <td>@pedido.CorreElectronicoCliente</td>
+                <td>@pedido.MetodoDePago</td>
+                <td>
+                    @foreach (var pp in pedido.PedidoProductos)
+                    {
+                        <div>@pp.ProductoParaVender.NombreProducto</div>
+                        <div>@pp.CantidadDePedido x</div>
+                        <div>@{
+                                var precio = pp.ProductoParaVender.Precio * pp.CantidadDePedido;
+                               } @precio.ToString("f") euros</div>
+                    }
+                </td>
+                <td>
+                    @{
+                        double total = 0;
+                    }
+                    @foreach (var pp in pedido.PedidoProductos)
+                    {
+                        
+                        <div>
+                            @{
+                                var precio = pp.ProductoParaVender.Precio * pp.CantidadDePedido;
+                                total += precio; 
+                            }
+                            
+                        </div>
+
+                    }
+
+                    <div>
+                        Total: @total euros
+                    </div>
+
+                </td>
+                <td>@pedido.FechaDePedido.ToShortDateString()</td>
+                <td>@pedido.EstadoPedido.ToString()</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@pedido.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@pedido.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@pedido.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

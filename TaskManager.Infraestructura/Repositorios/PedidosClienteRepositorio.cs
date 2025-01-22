@@ -1,4 +1,5 @@
-﻿using TaskManager.Aplicacion.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Infraestructura.Data;
 
@@ -13,7 +14,16 @@ namespace TaskManager.Infraestructura.Repositorios
             _context = context;
         }
 
-        // OBTENER LISTADO
+        #region 
+
+        public async Task<List<PedidosClienteModel>> ObtenerListadoPedidosClientesAsync()
+        {
+            var result = await _context.PedidosClientes.Include(p => p.Pedidos).ToListAsync();
+            return result;
+        }
+
+
+        #endregion
 
         // OBTENER POR ID
 
@@ -21,12 +31,10 @@ namespace TaskManager.Infraestructura.Repositorios
 
         public async Task CrearPedidosCliente(PedidosClienteModel model)
         {
-            model = new PedidosClienteModel()
-            {
-                FechaDePedido = DateTime.Now
-            };
+            model.FechaDePedido = DateTime.Now;
             await _context.PedidosClientes.AddAsync(model);
             await _context.SaveChangesAsync();
+            
         }
     }
 }

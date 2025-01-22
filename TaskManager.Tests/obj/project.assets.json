@@ -3152,6 +3152,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "CsvHelper": "33.0.1",
+          "EPPlus": "7.5.2",
           "TaskManager.Dominio": "1.0.0"
         },
         "compile": {
@@ -3178,6 +3180,7 @@
           "AutoMapper": "13.0.1",
           "CsvHelper": "33.0.1",
           "EPPlus": "7.5.2",
+          "EntityFramework": "6.5.1",
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
