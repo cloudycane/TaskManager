@@ -31,6 +31,8 @@ En esta área podemos ver el catálogo o el listado de los productos en venta de
 
 ## Módulo 3: Ordénes de los Productos de los Suministradores 
 
+https://github.com/user-attachments/assets/8feb6f81-b1b7-41e3-a3bd-32fd4dfcd2c0
+
 Si deseamos ordenar un producto de los suministradores, aquí es el siguiente destino. Esta sección nos mostrará un detalle de nuestros pedidos tales como las cantidades, el proveedor, el precio total, la fecha de orden, etc. Tambiém tiene funciones de crear, organizar, editar, eliminar, y comprar los ordenes incluso generar archivos CSV y Excel (xlsx).
 
 ## Módulo 4: Compra / Adquisición de las Materias Primas 
