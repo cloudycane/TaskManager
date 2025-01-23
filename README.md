@@ -52,7 +52,11 @@ Este módulo se encarga de la gestión del inventario de materias primas, asegur
 
 ## Módulo 6: Reservación de Cliente
 
-https://github.com/user-attachments/assets/c153edf8-5241-4b73-a0b1-ca8da3437b67
+
+
+https://github.com/user-attachments/assets/8b2cf605-b00a-4447-bdd2-abb3d50c7f32
+
+
 
 Es una de las características primordiales del proyecto ya que no solamente ayuda a los clientes a reservar su puesto para el restaurante si no también ayuda a la empresa a gestionar las reservaciones de muchas clientes día a día. Este módulo permite crear, organizar, editar, eliminar, generar archivos CSV y Excel (xlsx) de las reservaciones incluso hacer un recordatorio y una validación del acceso en formato PDF. 
 
