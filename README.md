@@ -37,6 +37,9 @@ Si deseamos ordenar un producto de los suministradores, aquí es el siguiente de
 
 ## Módulo 4: Compra / Adquisición de las Materias Primas 
 
+https://github.com/user-attachments/assets/6c4add4f-675d-4a51-a910-42e6710a26a1
+
+
 En este proceso, realizamos el pago de los productos que hemos ordenado a los suministradores. Asegura la obtención de las materias primas necesarias de manera oportuna y eficiente. Este módulo es vital para garantizar un flujo constante de materiales, optimizando costos y asegurando la continuidad de la producción.
 
 ## Módulo 5: Inventario de Materias Primas 
