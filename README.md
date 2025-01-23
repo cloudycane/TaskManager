@@ -19,7 +19,7 @@ Abajo se puede visualizar las actividades de negocio dentro del establecimiento:
 # Los Módulos y Flujo de Negocio (Modules And Business Process Flows) 
 ## Módulo 1: Portal de los Suministradores
 
-https://github.com/user-attachments/assets/4e1b8366-fa8a-470f-9580-1bedf5624b69
+https://github.com/user-attachments/assets/0ea2374a-4927-4258-9c62-aa48407018d8
 
 Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, editar, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel (xlsx). 
 
