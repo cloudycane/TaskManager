@@ -61,19 +61,4 @@ Este módulo cubre todo el ciclo de vida de los pedidos de los clientes, desde l
 Una vez que los clientes han realizado sus pedidos (en línea o dentro del restaurante), la aplicación notificará y mostrará los detalles de sus pedidos a los empleados y iniciará el proceso de la producción. En esta fase se está teniendo en cuenta las cantidades de los productos en el inventario. Cada vez que se produce algo, se reduce la cantidad de cada uno de los productos utilizados para hacer los pedidos del cliente.  
 ## Módulo 9: Facturación/Pago (Cliente)
 
-En este proceso el cliente realiza el pago para la comida o los productos que ha pedido. 
-## Módulo 10: Inventario (Productos Terminados o Consumos)
-
-Gestiona el inventario de productos terminados o bienes de consumo, asegurando que siempre haya suficiente stock para satisfacer la demanda sin incurrir en excesos. Este módulo también se encarga de optimizar el espacio de almacenamiento y mejorar la rotación de inventario para maximizar la eficiencia operativa.
-
-## Módulo 11: Pedidos / Gestión de Pedidos de Clientes 
-
-Coordina todos los aspectos relacionados con los pedidos de los clientes, desde la recepción hasta la entrega final. Incluye la comunicación con el cliente, la gestión de la logística y el monitoreo del estado de los pedidos para asegurar una entrega puntual y en las condiciones acordadas.
-
-## Módulo 12: Ventas 
-
-Este módulo abarca la gestión del proceso de ventas, desde la captación de clientes hasta el cierre de ventas. Incluye el análisis de mercado, la creación de estrategias de venta, la gestión de relaciones con los clientes, y el seguimiento de objetivos de ventas para maximizar los ingresos y la rentabilidad.
-
-## Módulo 13: Contabilidad y Finanzas
-
-Se centra en la administración financiera de la empresa, incluyendo el registro y análisis de todas las transacciones financieras. Este módulo proporciona informes financieros precisos y oportunos, esenciales para la toma de decisiones estratégicas, el cumplimiento fiscal y la gestión del presupuesto empresarial.
+En este proceso el cliente realiza el pago para la comida o los productos que ha pedido sea en línea o dentro del restaurante. 
