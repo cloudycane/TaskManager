@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Rotativa.AspNetCore;
 using TaskManager.Aplicacion.Interfaces;
+using TaskManager.Aplicacion.Servicios;
 using TaskManager.Dominio.Entidades;
 using TaskManager.Dominio.Entidades.DTOs;
 using TaskManager.Infraestructura.Data;
@@ -13,12 +15,14 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
     {
         private readonly IProductosParaVenderRepositorio _productosParaVenderRepositorio;
         private readonly IPedidosClienteRepositorio _clienteRepositorio;
+        private readonly IPedidosClienteService _pedidosService;
         private readonly ApplicationDbContext _context;
 
-        public PedidosClienteController(IProductosParaVenderRepositorio productosParaVenderRepositorio, IPedidosClienteRepositorio pedidosClienteRepositorio, ApplicationDbContext context)
+        public PedidosClienteController(IProductosParaVenderRepositorio productosParaVenderRepositorio, IPedidosClienteRepositorio pedidosClienteRepositorio,IPedidosClienteService pedidosService ,ApplicationDbContext context)
         {
             _productosParaVenderRepositorio = productosParaVenderRepositorio;
             _clienteRepositorio = pedidosClienteRepositorio;
+            _pedidosService = pedidosService;
             _context = context;
         }
 
@@ -54,7 +58,6 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             return View(viewModel);
         }
 
-        // Handle form submission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Crear(PedidosClienteDTO viewModel)
@@ -92,6 +95,42 @@ namespace TaskManager.UI.Areas.Cliente.Controllers
             return View(viewModel);
         }
 
+        public async Task<IActionResult> PedidosPDF(int id)
+        {
+            var pedidosCliente = await _context.PedidosClientes
+                .Include(p => p.PedidoProductos) // Include related PedidoProductos
+                .ThenInclude(pp => pp.ProductoParaVender) // Include related ProductoParaVender details
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (pedidosCliente == null)
+            {
+                return NotFound();
+            }
+
+            // Convert to DTO for passing to the view
+            var dtoPedidosCliente = new PedidosClienteDTO
+            {
+                NombreCliente = pedidosCliente.NombreCliente,
+                DireccionCliente = pedidosCliente.DireccionCliente,
+                TelefonoCliente = pedidosCliente.TelefonoCliente,
+                CorreElectronicoCliente = pedidosCliente.CorreElectronicoCliente,
+                MetodoDePago = pedidosCliente.MetodoDePago,
+                PedidoProductos = pedidosCliente.PedidoProductos.Select(pp => new PedidoProductoModel
+                {
+                    PedidoClienteId = pp.PedidoClienteId,
+                    ProductoParaVenderId = pp.ProductoParaVenderId,
+                    CantidadDePedido = pp.CantidadDePedido,
+                    PrecioTotal = pp.PrecioTotal,
+                    ProductoParaVender = pp.ProductoParaVender
+                }).ToList()
+            };
+
+            return new ViewAsPdf("PedidosPDF", dtoPedidosCliente)
+            {
+                FileName = "Comprobante.pdf",
+                PageSize = Rotativa.AspNetCore.Options.Size.A6 // Adjust the page size
+            };
+        }
 
     }
 }

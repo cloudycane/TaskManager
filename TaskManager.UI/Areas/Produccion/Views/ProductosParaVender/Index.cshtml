@@ -40,7 +40,7 @@
             <th>Imagen</th>
             <th>Producto</th>
             <th>Descripción</th>
-            <th>Ingredientes</th>
+         
             <th>Precio</th>
             <th>Estado</th>
             <th>Acciones</th>
@@ -53,24 +53,13 @@
                 <td> <img src="@Url.Content($"~/{producto.ImagePath}")" alt="Logo" width="128" height="128" class="img-square" /></td>
                 <td>@producto.NombreProducto</td>
                 <td>@producto.Descripcion</td>
-                <td>
-                    @if (producto.Ingredientes != null && producto.Ingredientes.Any())
-                    {
-                        <ul>
-                            @foreach (var ing in producto.Ingredientes)
-                            {
-                                <li>@ing.NombreProducto</li>  <!-- Display the ingredient's name -->
-                            }
-                        </ul>
-                    }
-                    else
-                    {
-                        <span>No hay ingredientes disponibles.</span>  <!-- Display if no ingredients are available -->
-                    }
-                </td>
+                
                 <td>@producto.Precio euros</td>
                 <td></td>
-                <td></td>
+                <td>
+                    <a class="btn btn-info">Editar</a>
+                    <a class="btn btn-danger">Eliminar</a>
+                </td>
             </tr>
         }
     </tbody>

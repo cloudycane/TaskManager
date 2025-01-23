@@ -28,8 +28,46 @@ namespace TaskManager.Infraestructura.Repositorios
 
         public async Task<OrdenAdquisicionModel> ObtenerOrdenProductoPorIdAsync(int id)
         {
-           return await _context.OrdenesAdquisicion.FindAsync(id);
+            return await _context.OrdenesAdquisicion
+                                 .Include(op => op.ProductoSuministrador) 
+                                 .ThenInclude(ps => ps.Suministrador)  
+                                 .FirstOrDefaultAsync(op => op.Id == id);
         }
+
+        // ELIMINAR ORDEN 
+
+        public async Task EliminarOrdenProductoSuministrador(int id)
+        {
+            var orden = await ObtenerOrdenProductoPorIdAsync(id);
+
+            if (orden != null)
+            {
+                _context.OrdenesAdquisicion.Remove(orden);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+
+        // EDITAR ORDENES 
+
+        public async Task ActualizarOrdenProductoSuministrador(OrdenAdquisicionModel ordenAdquisicion)
+        {
+            var ordenAnterior = await ObtenerOrdenProductoPorIdAsync(ordenAdquisicion.Id);
+
+            if (ordenAnterior != null)
+            {
+                ordenAnterior.HoraDeCreacion = ordenAdquisicion.HoraDeCreacion;
+                ordenAnterior.FechaDeCreacion = ordenAdquisicion.FechaDeCreacion;
+                ordenAnterior.CantidadDeOrden = ordenAdquisicion.CantidadDeOrden;
+                ordenAnterior.PrecioTotal = ordenAdquisicion.PrecioTotal;
+                ordenAnterior.Productos = ordenAdquisicion.Productos;
+                ordenAnterior.ProductoSuministrador.NombreProducto = ordenAdquisicion.ProductoSuministrador.NombreProducto;
+                ordenAnterior.ProductoSuministradorId = ordenAdquisicion.ProductoSuministradorId;
+                ordenAnterior.Estado = ordenAdquisicion.Estado;
+                await _context.SaveChangesAsync();
+            }
+        }
+
 
         // CSV
 

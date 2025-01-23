@@ -1929,6 +1929,8 @@
       "TaskManager.Aplicacion/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "CsvHelper": "33.0.1",
+          "EPPlus": "7.5.2",
           "TaskManager.Dominio": "1.0.0"
         },
         "runtime": {

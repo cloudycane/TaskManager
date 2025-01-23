@@ -23,6 +23,8 @@ builder.Services.AddScoped<ReservacionService>();
 builder.Services.AddScoped<ISuministradorService, SuministradorService>();
 builder.Services.AddScoped<ProductoSuministradorService>();
 builder.Services.AddScoped<ComprarProductoSuministradorService>();
+builder.Services.AddScoped<IPedidosClienteService, PedidosClienteService>();
+builder.Services.AddScoped<IOrdenAdquisicionService, OrdenAdquisicionService>();
 
 builder.Services.AddScoped<IReservacionRepositorio, ReservacionRepositorio>(); 
 builder.Services.AddScoped<ISuministradorRepositorio, SuministradorRepositorio>();

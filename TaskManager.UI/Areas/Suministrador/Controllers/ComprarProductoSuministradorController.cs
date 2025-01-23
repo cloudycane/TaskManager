@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Rotativa.AspNetCore;
 using TaskManager.Aplicacion.Interfaces;
 using TaskManager.Aplicacion.Servicios;
 using TaskManager.Dominio.Entidades;
@@ -63,6 +64,22 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
 
             return View(model);
         }
+
+        public async Task<IActionResult> CambiarEstado(int id, EstadoDeCompraEnum estadoProducto)
+        {
+            var compra = await _compraProductoSuministradorFacturacionRepositorio.ObtenerListadoCompraProductoSuministradorPorIdAsync(id);
+
+            if (compra != null)
+            {
+                compra.EstadoDeCompra = estadoProducto;
+                _context.CompraProductoSuministradorFacturacion.Update(compra);
+                await _unitOfWork.GuardarAsync();
+                return RedirectToAction("Index");
+            }
+
+            return NotFound();
+        }
+
 
         public async Task<IActionResult> CambiarTerminoPago(int id, TerminosPagoEnum terminoPago)
         {
@@ -137,5 +154,27 @@ namespace TaskManager.UI.Areas.Suministrador.Controllers
             MemoryStream memoryStream = await _compraProductoSuministradorFacturacionRepositorio.ObtenerComprasProductosSuministradoresExcel();
             return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheet", "ComprasProductosSuministrador.csv");
         }
+
+        public async Task<IActionResult> GenerarPDF(int id)
+        {
+            // Obtener el modelo con el repositorio
+            var compra = await _compraProductoSuministradorFacturacionRepositorio.ObtenerListadoCompraProductoSuministradorPorIdAsync(id);
+
+            // Verificar si el resultado es nulo
+            if (compra == null)
+            {
+                return NotFound();
+            }
+
+            // Generar el PDF con Rotativa
+            return new ViewAsPdf("GenerarPDF", compra)
+            {
+                FileName = $"Factura-{compra.FacturacionID}.pdf",
+                PageSize = Rotativa.AspNetCore.Options.Size.A4,
+                PageMargins = new Rotativa.AspNetCore.Options.Margins(10, 10, 10, 10)
+            };
+        }
+
+
     }
 }

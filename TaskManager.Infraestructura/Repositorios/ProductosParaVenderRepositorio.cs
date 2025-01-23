@@ -21,7 +21,7 @@ namespace TaskManager.Infraestructura.Repositorios
          
         public async Task<IEnumerable<ProductosParaVenderModel>> ObtenerListadoProductosParaVenderAsync()
         {
-            return await _context.ProductosParaVender.Include(i => i.Ingredientes).ToListAsync();
+            return await _context.ProductosParaVender.ToListAsync();
         }
  
 
@@ -50,7 +50,7 @@ namespace TaskManager.Infraestructura.Repositorios
             
             await csvWriter.NextRecordAsync();
 
-            List<ProductosParaVenderModel> productosParaVender = await _context.ProductosParaVender.Include(i => i.Ingredientes).ToListAsync();
+            List<ProductosParaVenderModel> productosParaVender = await _context.ProductosParaVender.ToListAsync();
 
             foreach (ProductosParaVenderModel producto in productosParaVender)
             {
@@ -92,7 +92,7 @@ namespace TaskManager.Infraestructura.Repositorios
 
                 int row = 2;
 
-                List<ProductosParaVenderModel> productosParaVender = await _context.ProductosParaVender.Include(i => i.Ingredientes).ToListAsync();
+                List<ProductosParaVenderModel> productosParaVender = await _context.ProductosParaVender.ToListAsync();
 
                 foreach (ProductosParaVenderModel producto in productosParaVender)
                 {

@@ -321,9 +321,6 @@ namespace TaskManager.Infraestructura.Migrations
                     b.Property<double>("PrecioProducto")
                         .HasColumnType("float");
 
-                    b.Property<int?>("ProductosParaVenderModelId")
-                        .HasColumnType("int");
-
                     b.Property<int>("SuministradorId")
                         .HasColumnType("int");
 
@@ -333,8 +330,6 @@ namespace TaskManager.Infraestructura.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OrdenAdquisicionModelId");
-
-                    b.HasIndex("ProductosParaVenderModelId");
 
                     b.HasIndex("SuministradorId");
 
@@ -501,10 +496,6 @@ namespace TaskManager.Infraestructura.Migrations
                         .WithMany("Productos")
                         .HasForeignKey("OrdenAdquisicionModelId");
 
-                    b.HasOne("TaskManager.Dominio.Entidades.ProductosParaVenderModel", null)
-                        .WithMany("Ingredientes")
-                        .HasForeignKey("ProductosParaVenderModelId");
-
                     b.HasOne("TaskManager.Dominio.Entidades.SuministradorModel", "Suministrador")
                         .WithMany()
                         .HasForeignKey("SuministradorId")
@@ -540,8 +531,6 @@ namespace TaskManager.Infraestructura.Migrations
 
             modelBuilder.Entity("TaskManager.Dominio.Entidades.ProductosParaVenderModel", b =>
                 {
-                    b.Navigation("Ingredientes");
-
                     b.Navigation("PedidoProductos");
                 });
 

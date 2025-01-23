@@ -9,7 +9,6 @@ namespace TaskManager.Dominio.Entidades
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int CantidadPedido { get; set; }
-        public List<ProductoSuministradorModel> Ingredientes { get; set; } = new List<ProductoSuministradorModel>();
         public string ImagePath { get; set; }
         public DateTime FechaDeProduccion { get; set; }
         public CategoriaProductoEnVentasEnum CategoriaProductoEnVentas { get; set; }

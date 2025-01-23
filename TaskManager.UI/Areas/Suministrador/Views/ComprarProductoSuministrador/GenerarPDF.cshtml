@@ -1,0 +1,58 @@
+﻿@model CompraProductoSuministradorModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Factura</h1>
+    <p><strong>Factura ID:</strong> @Model.FacturacionID</p>
+    <p><strong>Fecha de Emisión:</strong> @Model.FechaDeEmision.ToString("dd/MM/yyyy")</p>
+    <p><strong>Nombre de la Empresa:</strong> @Model.NombreLegalDeLaEmpresa</p>
+    <p><strong>Dirección:</strong> @Model.DireccionLinea1, @Model.DireccionLinea2</p>
+    <p><strong>Ciudad:</strong> @Model.Ciudad</p>
+    <p><strong>CIF:</strong> @Model.CIF</p>
+    <hr />
+    <h2>Detalles de la orden</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Suministrador</th>
+                <th>Cantidad</th>
+                <th>Precio Total</th>
+  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.OrdenAdquisicion.ProductoSuministrador.NombreProducto</td>
+                <td>@Model.OrdenAdquisicion.ProductoSuministrador.Suministrador.RazonSocial</td>
+                <td>@Model.OrdenAdquisicion.CantidadDeOrden</td>
+                <td>@Model.OrdenAdquisicion.PrecioTotal EUROS</td>
+             
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

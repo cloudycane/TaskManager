@@ -48,23 +48,7 @@ namespace TaskManager.UI.Areas.Produccion.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Initialize an empty list for ingredientes
-                List<ProductoSuministradorModel> ingredientesSeleccionados = new List<ProductoSuministradorModel>();
-
-                // Loop through each selected ingredient ID
-                foreach (var ingredienteId in ingredientesIds)
-                {
-                    var productoSuministrador = await _productoSuministradorRepositorio.ObtenerProductoSuministradorPorIdAsync(ingredienteId);
-
-                    if (productoSuministrador != null)
-                    {
-                        // Add each ingredient to the list
-                        ingredientesSeleccionados.Add(productoSuministrador);
-                    }
-                }
-
-                // Assign the ingredients list to the new product
-                productosParaVender.Ingredientes = ingredientesSeleccionados;
+               
 
                 // Handle image upload
                 if (imagen != null && imagen.Length > 0)

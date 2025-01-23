@@ -24,9 +24,7 @@
 <div class="col-lg-12" style="margin-bottom: 2%">
     <a asp-action="Index" asp-controller="Inicio" asp-area="Dashboard" class="btn btn-info">Volver atrás</a>
     <a asp-action="ComprasProductosSuministradoresCSV" asp-controller="ComprarProductoSuministrador" class="btn btn-info">Generar CSV</a>
-    <a asp-action="ComprasProductosSuministradoresExcel" asp-controller="ComprarProductoSuministrador" class="btn btn-info">Generar Excel</a>
-    <a asp-action="" asp-controller="ComprarProductoSuministrador" class="btn btn-info">Generar PDF</a>
-    <a asp-action="Index" asp-controller="ProductoSuministrador" class="btn btn-primary">Hacer Pedido</a>
+    <a asp-action="ComprasProductosSuministradoresExcel" asp-controller="ComprarProductoSuministrador" class="btn btn-info">Generar Excel</a>    <a asp-action="Index" asp-controller="ProductoSuministrador" class="btn btn-primary">Hacer Pedido</a>
 
     <nav aria-label="Page navigation" style="float: right;">
         <ul class="pagination">
@@ -81,6 +79,17 @@
                     </ul>
                 </td>
                 <td>
+                    <form asp-action="CambiarEstado" method="post">
+                        <input type="hidden" name="id" value="@compra.Id" />
+                        <button type="submit" name="estadoProducto" value="@((int)EstadoDeCompraEnum.PendienteDePago)"><span class="glyphicon glyphicon-refresh"></span></button>
+                        <button type="submit" name="estadoProducto" value="@((int)EstadoDeCompraEnum.EnProceso)"><span class="glyphicon glyphicon-transfer"></span></button>
+                        <button type="submit" name="estadoProducto" value="@((int)EstadoDeCompraEnum.PagoRealizado)"><span class="glyphicon glyphicon-saved"></span></button>
+                        <button type="submit" name="estadoProducto" value="@((int)EstadoDeCompraEnum.Cancelado)"><span class="glyphicon glyphicon-remove"></span></button>
+                        <button type="submit" name="estadoProducto" value="@((int)EstadoDeCompraEnum.ProductoRecibido)"><span class="glyphicon glyphicon-ok"></span></button>
+
+                    </form>
+
+
                     @{
                         switch (compra.EstadoDeCompra)
                         {
@@ -149,13 +158,17 @@
 
                 </td>
                 <td>
+  
+                   @if (compra.EstadoDeCompra == EstadoDeCompraEnum.ProductoRecibido)
+                    {
+                        <form asp-controller="InventarioMateriaPrima" asp-action="AñadirAlInventario" asp-area="Inventario" method="post">
+                            <input type="hidden" name="compraId" value="@compra.Id" />
+                            <button type="submit" class="btn btn-success" style="float: right;">Añadir Al Inventario</button>
+                        </form>
+                    }
+                   
                     <a class="btn btn-danger" asp-action="Eliminar" asp-controller="ComprarProductoSuministrador" asp-route-id="@compra.Id"><i class="bi bi-trash3-fill"></i></a>
-                    <a class="btn btn-info"><i class="bi bi-pencil-square"></i></a>
-                    <form asp-controller="InventarioMateriaPrima" asp-action="AñadirAlInventario" asp-area="Inventario" method="post">
-                        <input type="hidden" name="compraId" value="@compra.Id" />
-                        <button type="submit" class="btn btn-success" style="float: right;">Añadir Al Inventario</button>
-                    </form>
-                    <a class="btn btn-primary"><i class="bi bi-printer"></i></a>
+                    <a class="btn btn-primary" asp-action="GenerarPDF" asp-route-id="@compra.Id"><i class="bi bi-printer"></i></a>
                 </td>
             </tr>
         }

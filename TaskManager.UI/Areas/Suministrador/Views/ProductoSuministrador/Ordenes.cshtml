@@ -95,8 +95,8 @@
                 <td>
                     <a class="btn btn-success" asp-controller="ProductoSuministrador" asp-action="AprobarOrden" asp-route-id="@orden.Id">Aprobar <span class="glyphicon glyphicon-ok" style="color: white;"></span></a>
                     <a class="btn btn-warning" asp-controller="ProductoSuministrador" asp-action="RechazarOrden" asp-route-id="@orden.Id">Rechazar <span class="glyphicon glyphicon-remove" style="color: white;"></span></a>
-                    <a class="btn btn-info">Editar</a>
-                    <a class="btn btn-danger">Eliminar</a>
+                 
+                    <a class="btn btn-danger" asp-controller="GestionarOrden" asp-action="Eliminar" asp-route-id="@orden.Id">Eliminar</a>
                     @if(orden.Estado == EstadoOrdenProductoSuministradorEnum.Aprobado)
                     {
 
