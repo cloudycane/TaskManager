@@ -44,6 +44,10 @@ En este proceso, realizamos el pago de los productos que hemos ordenado a los su
 
 ## Módulo 5: Inventario de Materias Primas 
 
+
+https://github.com/user-attachments/assets/db2f173a-3a64-46d4-b19d-d551d6dead07
+
+
 Este módulo se encarga de la gestión del inventario de materias primas, asegurando que se mantengan niveles adecuados para evitar interrupciones en la producción. Incluye el monitoreo constante de existencias, control de entradas y salidas, y la implementación de estrategias para minimizar pérdidas por obsolescencia o deterioro.
 
 ## Módulo 6: Reservación de Cliente
