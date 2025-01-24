@@ -62,15 +62,18 @@ Es una de las características primordiales del proyecto ya que no solamente ayu
 
 ## Módulo 7: Gestión de los Pedidos de los Clientes 
 
-Este módulo cubre todo el ciclo de vida de los pedidos de los clientes, desde la recepción y confirmación hasta el envío y entrega. Su objetivo es garantizar que los pedidos se procesen de manera eficiente y puntual, mejorando la experiencia del cliente y fortaleciendo la relación comercial.
-
-## Módulo 8: Producción / Producción de los Pedidos 
-
-Una vez que los clientes han realizado sus pedidos (en línea o dentro del restaurante), la aplicación notificará y mostrará los detalles de sus pedidos a los empleados y iniciará el proceso de la producción. En esta fase se está teniendo en cuenta las cantidades de los productos en el inventario. Cada vez que se produce algo, se reduce la cantidad de cada uno de los productos utilizados para hacer los pedidos del cliente.  
-
-## Módulo 9: Creación de los Productos En Ventas
 
 
-## Módulo 10: Facturación/Pago (Cliente)
+https://github.com/user-attachments/assets/7edc3245-d253-4549-9335-00c4e8398dec
+
+
+
+Este módulo cubre todo el ciclo de vida de los pedidos de los clientes, desde la recepción y confirmación hasta el envío y entrega. Su objetivo es garantizar que los pedidos se procesen de manera eficiente y puntual, mejorando la experiencia del cliente y fortaleciendo la relación comercial. Una vez que los clientes han realizado sus pedidos (en línea o dentro del restaurante), la aplicación notificará y mostrará los detalles de sus pedidos a los empleados y iniciará el proceso de la producción. En esta fase se está teniendo en cuenta las cantidades de los productos en el inventario. Cada vez que se produce algo, se reduce la cantidad de cada uno de los productos utilizados para hacer los pedidos del cliente.  
+
+
+## Módulo 8: Creación de los Productos En Ventas
+
+
+## Módulo 9: Facturación/Pago (Cliente)
 
 En este proceso el cliente realiza el pago para la comida o los productos que ha pedido sea en línea o dentro del restaurante. 
