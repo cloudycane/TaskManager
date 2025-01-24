@@ -82,4 +82,7 @@ https://github.com/user-attachments/assets/e6902c93-450b-4b28-a189-89a64efd3e3f
 
 ## Módulo 9: Facturación/Pago (Cliente)
 
+![ps9](https://github.com/user-attachments/assets/e3809c19-906c-41d8-9831-8df2a181deea)
+
+
 En este proceso el cliente realiza el pago para la comida o los productos que ha pedido sea en línea o dentro del restaurante. 
