@@ -74,6 +74,12 @@ Este módulo cubre todo el ciclo de vida de los pedidos de los clientes, desde l
 ## Módulo 8: Creación de los Productos En Ventas
 
 
+
+https://github.com/user-attachments/assets/e6902c93-450b-4b28-a189-89a64efd3e3f
+
+
+
+
 ## Módulo 9: Facturación/Pago (Cliente)
 
 En este proceso el cliente realiza el pago para la comida o los productos que ha pedido sea en línea o dentro del restaurante. 
