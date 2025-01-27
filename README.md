@@ -3,6 +3,7 @@
 <b>Proyecto de conocimiento: </b> Un restaurante llamado "Resto Fibonacci" necesitaría un plan de recurso empresarial Software as a Service en la nube (cloud-based SaaS ERP) simple y ágil que gestiona todas las tareas diarias y las distintas actividades de negocios (adquisición, inventario, producción, pedidos, ventas, contabilidad, etc.).
 
 https://github.com/user-attachments/assets/a6a09f1f-0259-4289-a8a1-dc7546ee5b46
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 Abajo se puede visualizar las actividades de negocio dentro del establecimiento: 
 <ul>
@@ -20,25 +21,28 @@ Abajo se puede visualizar las actividades de negocio dentro del establecimiento:
 ## Módulo 1: Portal de los Suministradores
 
 https://github.com/user-attachments/assets/0ea2374a-4927-4258-9c62-aa48407018d8
-<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo.</i></p>
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 Este módulo ayuda al restaurante en la manera que registra los posibles suministradores (sourcing) para la adquisición de los productos necesarios para el inventario. El producto adquirido se convertirá a "materia prima" para la producción. Este portal de los suministradores permite registrar, organizar, editar, y eliminar los datos empresariales de los suministradores incluso generar archivos tales como CSV y Excel (xlsx). 
 
 ## Módulo 2: Productos de los Suministradores 
 
 https://github.com/user-attachments/assets/513f9559-0d20-44de-9465-2a6d24c6da66
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 En esta área podemos ver el catálogo o el listado de los productos en venta de los suministradores registrados en nuestra aplicación. Tiene funciones como la de crear, organizar, editar, eliminar, y ordenar los productos incluso generar archivos CSV y Excel (xlsx).  
 
 ## Módulo 3: Ordénes de los Productos de los Suministradores 
 
 https://github.com/user-attachments/assets/8feb6f81-b1b7-41e3-a3bd-32fd4dfcd2c0
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 Si deseamos ordenar un producto de los suministradores, aquí es el siguiente destino. Esta sección nos mostrará un detalle de nuestros pedidos tales como las cantidades, el proveedor, el precio total, la fecha de orden, etc. Tambiém tiene funciones de crear, organizar, editar, eliminar, y comprar los ordenes incluso generar archivos CSV y Excel (xlsx).
 
 ## Módulo 4: Compra / Adquisición de las Materias Primas 
 
 https://github.com/user-attachments/assets/6c4add4f-675d-4a51-a910-42e6710a26a1
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 
 En este proceso, realizamos el pago de los productos que hemos ordenado a los suministradores. Asegura la obtención de las materias primas necesarias de manera oportuna y eficiente. Este módulo es vital para garantizar un flujo constante de materiales, optimizando costos y asegurando la continuidad de la producción.
@@ -47,6 +51,7 @@ En este proceso, realizamos el pago de los productos que hemos ordenado a los su
 
 
 https://github.com/user-attachments/assets/db2f173a-3a64-46d4-b19d-d551d6dead07
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 
 Este módulo se encarga de la gestión del inventario de materias primas, asegurando que se mantengan niveles adecuados para evitar interrupciones en la producción. Incluye el monitoreo constante de existencias, control de entradas y salidas, y la implementación de estrategias para minimizar pérdidas por obsolescencia o deterioro.
@@ -56,6 +61,7 @@ Este módulo se encarga de la gestión del inventario de materias primas, asegur
 
 
 https://github.com/user-attachments/assets/8b2cf605-b00a-4447-bdd2-abb3d50c7f32
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 
 
@@ -66,6 +72,7 @@ Es una de las características primordiales del proyecto ya que no solamente ayu
 
 
 https://github.com/user-attachments/assets/7edc3245-d253-4549-9335-00c4e8398dec
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 
 
@@ -77,6 +84,7 @@ Este módulo cubre todo el ciclo de vida de los pedidos de los clientes, desde l
 
 
 https://github.com/user-attachments/assets/e6902c93-450b-4b28-a189-89a64efd3e3f
+<p><i>** En caso de este video deja de cargarse, refrescar el navegador por favor y vuelve a intentarlo. **</i></p>
 
 
 
